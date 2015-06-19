@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<CallingCardStatus>
+  <status id="1">
+    reserved
+  </status>
+  <status id="2">
+    active
+  </status>
+  <status id="3">
+    suspended
+  </status>
+  <status id="4">
+    expired
+  </status>
+  <status id="5">
+    paid_not_activated
+  </status>
+</CallingCardStatus>

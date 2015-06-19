@@ -1,0 +1,92 @@
+﻿
+body {
+  text-align: center; 
+  min-width: 1050px;
+}
+
+
+
+#wrapper {
+  width: 1050px; 
+  margin: 0 auto; 
+  text-align: left; 
+  /*background-color: #FFFFFF; */
+   background:url('../images/bg.jpg'); 
+
+}
+
+#branding {
+  height: 100px;
+  width:1050px;
+  /* background: url(images/logo.gif) gray no-repeat ; */
+    background:gray;
+}
+
+#loginInfo{
+
+	/*background:white;*/
+    float:right;
+    position:relative;
+    bottom:15px;
+}
+
+#mainNav{
+  padding: 0px;
+}
+
+#selectedService{
+  padding-top: 10px;
+  width:860px;
+  float:left;
+}
+
+
+#contentWrapper
+{
+  padding-top:10px;
+  width: 860px;
+  float: left; 
+}
+
+
+#subMenu{
+  width: 150px;
+  float: left; 
+}
+#content { 
+  width: 700px;
+  float: right;
+}
+
+#AD { 
+  width: 180px; 
+  float: right; 
+} 
+
+#footer { 
+  clear: both; 
+} 
+
+
+#AD {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+
+#AD * {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#AD * * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#content * {
+  padding-right: 20px;
+}
+
+#content * * {
+  padding-right: 0;
+}

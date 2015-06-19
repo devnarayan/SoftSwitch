@@ -1,0 +1,642 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddPagingResource1.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="btnAddPagingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnAddResource1.Text" xml:space="preserve">
+    <value>&lt;&lt; Ajouter</value>
+  </data>
+  <data name="btnAddResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDeleteResource1.Text" xml:space="preserve">
+    <value>Supprimer</value>
+  </data>
+  <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDownResource1.Text" xml:space="preserve">
+    <value>Bas</value>
+  </data>
+  <data name="btnDownResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnModifyResource1.Text" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="btnModifyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnRemoveResource1.Text" xml:space="preserve">
+    <value>Supprimer  &gt;&gt;</value>
+  </data>
+  <data name="btnRemoveResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnResetResource1.Text" xml:space="preserve">
+    <value>Réinitialiser</value>
+  </data>
+  <data name="btnResetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchResource1.Text" xml:space="preserve">
+    <value>Chercher</value>
+  </data>
+  <data name="btnSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnUpResource1.Text" xml:space="preserve">
+    <value>Haut</value>
+  </data>
+  <data name="btnUpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkExactResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkExactResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.ConfirmText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.ConfirmTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.DataTextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridButtonColumnResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.ImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.Text" xml:space="preserve">
+    <value>Selectionner</value>
+  </data>
+  <data name="imgExportResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgExportResource1.ToolTip" xml:space="preserve">
+    <value>Exporter les données</value>
+  </data>
+  <data name="imgImportResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgImportResource1.ToolTip" xml:space="preserve">
+    <value>Importer les données</value>
+  </data>
+  <data name="lbAssignedPagingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAssignedPagingResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAssignedPagingResource1.ToolTip" xml:space="preserve">
+    <value>Extentions attibuées</value>
+  </data>
+  <data name="lblDefinePagingResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefinePagingResource1.ToolTip" xml:space="preserve">
+    <value>Deffinir le Paging</value>
+  </data>
+  <data name="lblErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExactResource1.Text" xml:space="preserve">
+    <value>Exacte</value>
+  </data>
+  <data name="lblExactResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblManagePagingResource1.Text" xml:space="preserve">
+    <value>Gérer le groupe Paging</value>
+  </data>
+  <data name="lblManagePagingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPageSizeResource1.Text" xml:space="preserve">
+    <value>Nombre de lignes</value>
+  </data>
+  <data name="lblPageSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPagingNameResource1.Text" xml:space="preserve">
+    <value>Nom du Paging</value>
+  </data>
+  <data name="lblPagingNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPagingResource1.Text" xml:space="preserve">
+    <value>Numéro du Paging</value>
+  </data>
+  <data name="lblPagingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchByResource1.Text" xml:space="preserve">
+    <value>Chercher par</value>
+  </data>
+  <data name="lblSearchByResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchForResource1.Text" xml:space="preserve">
+    <value>Chercher</value>
+  </data>
+  <data name="lblSearchForResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchResource1.Text" xml:space="preserve">
+    <value>Rechercher</value>
+  </data>
+  <data name="lblSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUnassignedPagingResource1.Text" xml:space="preserve">
+    <value>Extentions non attribuées</value>
+  </data>
+  <data name="lblUnassignedPagingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbUnassignedPagingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSearchResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="RadComboBoxItemResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="RadComboBoxItemResource2.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="RadComboBoxItemResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource2.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="RadComboBoxItemResource3.Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="RadComboBoxItemResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource3.Value" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="RadComboBoxItemResource4.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="RadComboBoxItemResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource4.Value" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="RadComboBoxItemResource5.Text" xml:space="preserve">
+    <value>Tout</value>
+  </data>
+  <data name="RadComboBoxItemResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource5.Value" xml:space="preserve">
+    <value>Tout</value>
+  </data>
+  <data name="RadComboBoxItemResource6.Text" xml:space="preserve">
+    <value>Nom du Paging</value>
+  </data>
+  <data name="RadComboBoxItemResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource6.Value" xml:space="preserve">
+    <value>Nom du Paging PBX</value>
+  </data>
+  <data name="RadComboBoxItemResource7.Text" xml:space="preserve">
+    <value>Numero du Paging</value>
+  </data>
+  <data name="RadComboBoxItemResource7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource7.Value" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbPageSizeResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbPageSizeResource1.LoadingMessage" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="rcbPageSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSearchByResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSearchByResource1.LoadingMessage" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="rcbSearchByResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.BackImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.ClientSettings.ClientMessages.DragToGroupOrReorder" xml:space="preserve">
+    <value>Glisser vers le groupe ou reorganiser</value>
+  </data>
+  <data name="rgPagingResource1.ClientSettings.ClientMessages.DragToResize" xml:space="preserve">
+    <value>Glisser pour redimensionner</value>
+  </data>
+  <data name="rgPagingResource1.ClientSettings.ClientMessages.DropHereToReorder" xml:space="preserve">
+    <value>Déposer ici pour reorganiser</value>
+  </data>
+  <data name="rgPagingResource1.ClientSettings.ClientMessages.PagerTooltipFormatString" xml:space="preserve">
+    <value>Page: &lt;b&gt;{0}&lt;/b&gt; sur  &lt;b&gt;{1}&lt;/b&gt; pages</value>
+  </data>
+  <data name="rgPagingResource1.FilterMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.GroupingSettings.CollapseTooltip" xml:space="preserve">
+    <value>Masquer le groupe</value>
+  </data>
+  <data name="rgPagingResource1.GroupingSettings.ExpandTooltip" xml:space="preserve">
+    <value>Détailler le groupe</value>
+  </data>
+  <data name="rgPagingResource1.GroupingSettings.GroupByFieldsSeparator" xml:space="preserve">
+    <value>; </value>
+  </data>
+  <data name="rgPagingResource1.GroupingSettings.GroupContinuedFormatString" xml:space="preserve">
+    <value>…Suite du groupe de la page précédente</value>
+  </data>
+  <data name="rgPagingResource1.GroupingSettings.GroupContinuesFormatString" xml:space="preserve">
+    <value>Le groupe continue à la page suivante</value>
+  </data>
+  <data name="rgPagingResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
+    <value>Affichage {0} sur {1} article.</value>
+  </data>
+  <data name="rgPagingResource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
+    <value> ({0})</value>
+  </data>
+  <data name="rgPagingResource1.GroupingSettings.UnGroupTooltip" xml:space="preserve">
+    <value>Glisser hors de la barre pour dégrouper</value>
+  </data>
+  <data name="rgPagingResource1.GroupPanel.Text" xml:space="preserve">
+    <value>Glissez l'entête d'une colonne et placez là ici pour l'ajouter au groupe</value>
+  </data>
+  <data name="rgPagingResource1.GroupPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.HeaderContextMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Masquer</value>
+  </data>
+  <data name="rgPagingResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Détailler </value>
+  </data>
+  <data name="rgPagingResource1.HierarchySettings.SelfCollapseTooltip" xml:space="preserve">
+    <value>Masquer Self reference </value>
+  </data>
+  <data name="rgPagingResource1.HierarchySettings.SelfExpandTooltip" xml:space="preserve">
+    <value>Détailler Self reference expand</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.CommandItemSettings.AddNewRecordImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.CommandItemSettings.AddNewRecordText" xml:space="preserve">
+    <value>Ajouter nouvel enrégistrement</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.CommandItemSettings.RefreshImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
+    <value>Actualiser</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.EditFormSettings.CaptionFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.CollapseImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.ExpandImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ExpandCollapseColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.FilterExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>Aucun enregistrement d'enfants à afficher</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>aucun enregistrement à afficher.</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Pages suivantes</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.PagerStyle.NextPageText" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Page suivante</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Changer la page: {4} &amp;nbsp;Affichage de la page {0} sur {1}, article {2} à {3} sur {5}.</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Pages précédentes</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.PagerStyle.PrevPageText" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Page précédente</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.RowIndicatorColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.Summary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.MasterTableView.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Pages Suivantes</value>
+  </data>
+  <data name="rgPagingResource1.PagerStyle.NextPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Page Suivante</value>
+  </data>
+  <data name="rgPagingResource1.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Changer la page: {4} &amp;nbsp;Affichage de la page {0} sur {1}, article {2} à {3} sur {5}.</value>
+  </data>
+  <data name="rgPagingResource1.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Pages précédentes</value>
+  </data>
+  <data name="rgPagingResource1.PagerStyle.PrevPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgPagingResource1.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Page précédente</value>
+  </data>
+  <data name="rgPagingResource1.SortingSettings.SortedAscToolTip" xml:space="preserve">
+    <value>Trie asc</value>
+  </data>
+  <data name="rgPagingResource1.SortingSettings.SortedDescToolTip" xml:space="preserve">
+    <value>Trie desc</value>
+  </data>
+  <data name="rgPagingResource1.SortingSettings.SortToolTip" xml:space="preserve">
+    <value>Cliquer ici pour trier</value>
+  </data>
+  <data name="rgPagingResource1.StatusBarSettings.LoadingText" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="rgPagingResource1.StatusBarSettings.ReadyText" xml:space="preserve">
+    <value>Lecture</value>
+  </data>
+  <data name="rgPagingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPagingNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPagingNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPagingResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPagingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchForResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchForResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

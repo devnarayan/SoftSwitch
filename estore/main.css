@@ -1,0 +1,60 @@
+UNKNOWN {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+.toolbar:unknown {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.toolbar:active {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.toolbar:hover {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.toolbar:link {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.toolbar:visited {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.toolbar_white:unknown {
+	FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.toolbar_white:active {
+	FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.toolbar_white:hover {
+	FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.toolbar_white:link {
+	FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.toolbar_white:visited {
+	FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.standard {
+	FONT-SIZE: 10pt; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.standard8 {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.standard_white {
+	FONT-SIZE: 10pt; COLOR: white; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.standard8_white {
+	FONT-SIZE: 8pt; COLOR: white; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.fixed8 {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: 'Courier New',Courier,monospace
+}
+.alert {
+	FONT-SIZE: 10pt; COLOR: red; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.alert8 {
+	FONT-SIZE: 8pt; COLOR: red; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.drop {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}
+.box {
+	FONT-SIZE: 8pt; COLOR: black; FONT-FAMILY: Verdana, Geneva, Arial, Helvetica, sans-serif
+}

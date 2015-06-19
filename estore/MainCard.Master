@@ -1,0 +1,209 @@
+<%@ Master Language="C#" AutoEventWireup="true" Codebehind="MainCard.Master.cs" Inherits="CCEstore.MainCard" %>
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+
+<%@ Register TagPrefix="cc" TagName="langBar" Src="wucLanguageBar.ascx" %>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head id="Head1" runat="server">
+<meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+<meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+
+    <title>Estore</title>
+    
+    <script src="./javaScript/yahoo_2.0.0-b3.js"></script>
+
+    <script src="./javaScript/event_2.0.0-b3.js"></script>
+
+    <script src="./javaScript/dom_2.0.2-b3.js"></script>
+
+    <script src="./javaScript/dragdrop_2.0.0-b3.js"></script>
+
+
+    <link href="../css/moz-antialias.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/RoundedCornerFF.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/MainCardMaster.css" rel="stylesheet" type="text/css">
+    <link href="../css/CCEstore.css" rel="stylesheet" type="text/css">
+    <link href="../css/style.css" rel="stylesheet" type="text/css" >
+    
+    <link href="~/css/moz-antialias.css" rel="stylesheet" type="text/css">
+
+    <link href="~/css/RoundedCornerFF.css" rel="stylesheet" type="text/css">
+
+    <link href="~/css/CCEstore.css" rel="stylesheet" type="text/css">
+    <link href="~/css/style.css" rel="stylesheet" type="text/css" >
+
+
+    <link href="css/MainCardMaster.css" rel="stylesheet" type="text/css">
+    
+
+    <script type="text/javascript" language="javascript">
+        var submitted = 0;
+        function check_double_click(form) {
+            if (submitted == 1) {
+                alert("Please wait for transaction to be completed.");
+                return false;
+            }
+            submitted = 1;
+            return true;
+        }
+        
+  
+        
+
+    </script>
+
+   
+</head>
+<body id="button1">
+
+    <script type="text/javascript" language="javascript">
+        function rtsMainSelected(sender, args)
+        {
+            var selectedtab = args.get_tab().get_text() ; 
+            var rtsMain = $find("<%=rtsMain.ClientID%>");
+                
+            
+            if  ( selectedtab =="<%= rtsMain.Tabs[ rtsMain.Tabs.Count-1].Text %>" )
+            {
+                
+
+            
+                var t = '<%= Session["CustomerID"] %>';
+
+                
+                if ( t== null || t=="" )
+                {
+                    
+                    args.set_cancel(true);
+
+
+                 }
+                 else{
+                    return;
+
+                 }
+                 
+                var win = $find("<%= radwinLogin.ClientID %>");
+                if (win != null) win.show();
+
+                tab= rtsMain.findTabByValue("990");
+                tab.unselect();
+                return;
+            }
+            
+            
+            return;
+          
+
+            
+        }
+        
+
+        function OnClientclose(radWindow)
+        {         
+            
+            if ( radWindow.argument== "Register")
+                window.location="services.aspx";
+            else if ( radWindow.argument== "CardLoggedIn")
+                window.location="CD_CardDetail.aspx";
+            else if ( radWindow.argument== "CustomerLoggedIn")
+                window.location="SD_AccountSummary.aspx";
+            else 
+            {
+                var rtsMain = $find("<%=rtsMain.ClientID%>");
+                
+                //var tab = rtsMain.findTabByText("Account");
+                var tab= rtsMain.findTabByValue("200");
+                tab.unselect(); 
+            }
+        } 
+
+        
+        function rwSelect_OnClientclose(radWindow)
+        {         
+            if ( radWindow.argument != null)
+                window.location="RegisterHS.aspx?" + radWindow.argument;
+        } 
+        
+         
+    </script>
+
+    <form id="form1" runat="server">
+        <WebCtlIpsmarx:RadScriptManager ID="sm1" runat="server" EnableTheming="True">
+        </WebCtlIpsmarx:RadScriptManager>
+        <div id="wrapper">
+            <div id="branding">
+                <img src="<%= Page.ResolveUrl("~")%>images/logo.gif" />
+                <div id="loginInfo">
+                    <asp:Label ID="lblWelcome" runat="server" Font-Bold="True" meta:resourcekey="lblWelcomeResource1"></asp:Label>
+                    <asp:LinkButton ID="lbLogOut" runat="server" OnClick="lbLogOut_Click" meta:resourcekey="lbLogOutResource1" Text="Log Out"></asp:LinkButton>
+                </div>
+            </div>
+            <div>
+        <cc:langBar id="langBar1" runat="server"/>
+        </div>
+            <div id="mainNav">
+                <WebCtlIpsmarx:RadTabStrip ID="rtsMain" runat="server" OnClientTabSelected="rtsMainSelected"
+                    OnClientTabSelecting="rtsMainSelected" ClickSelectedTab="True" ReorderTabsOnSelect="True"
+                    BorderStyle="None" meta:resourcekey="rtsMainResource1">
+                </WebCtlIpsmarx:RadTabStrip>
+            </div>
+            <div id="contentWrapper">
+            
+                            
+
+                <div id="subMenu">
+                
+                                  <DIV class=module style="width:150px" >
+<DIV class=container><!--[if IE]><v:roundrect arcsize = "1966f" coordsize = 
+"21600,21600" fillcolor = "white" strokecolor = "#369" strokeweight = "1pt"><![endif]-->
+<DIV class=content>
+                
+                                <WebCtlIpsmarx:RadTabStrip ID="rtsSub" runat="server" BackColor="Transparent" Font-Bold="True"
+                        Font-Size="Medium" ForeColor="Transparent" Orientation="VerticalLeft" Skin="Forest" Width="130px" meta:resourcekey="rtsSubResource1">
+                    </WebCtlIpsmarx:RadTabStrip>
+                    
+                                        
+                    
+</DIV><!--[if IE]></v:roundrect><![endif]-->
+<DIV class=ft></DIV></DIV></DIV>
+                  
+                </div>
+                
+
+
+
+                <div id="content">
+                    <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+            </div>
+            <div id="AD">
+                <asp:ContentPlaceHolder ID="cphRight" runat="server">
+                    <!-- #include file="right.htm" -->
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="footer">
+                <asp:ContentPlaceHolder ID="cphBottom" runat="server">
+                    <!--# include file="bot.htm" -->
+                </asp:ContentPlaceHolder>
+            </div>
+            
+            
+  
+                    
+            <WebCtlIpsmarx:RadWindow ID="radwinLogin" runat="server" Height="445px" Modal="True"
+                NavigateUrl="DefaultL.aspx" Width="800px" ReloadOnShow="True" ShowContentDuringLoad="False"
+                Skin="Black" OnClientClose="OnClientclose" BorderStyle="Inset" KeepInScreenBounds="True" Behavior="Default" InitialBehavior="None" Left="" meta:resourcekey="radwinLoginResource1" Top="">
+            </WebCtlIpsmarx:RadWindow>
+            <br />
+            <WebCtlIpsmarx:RadWindow ID="rwSelect" runat="server" Height="289px" Modal="True"
+                ShowContentDuringLoad="False" KeepInScreenBounds="True" NavigateUrl="SelectServices.aspx"
+                Width="396px" OnClientClose="rwSelect_OnClientclose" Skin="Sunset" Behavior="Default" InitialBehavior="None" Left="" meta:resourcekey="rwSelectResource1" Top="">
+            </WebCtlIpsmarx:RadWindow>
+    </form>
+</body>
+</html>

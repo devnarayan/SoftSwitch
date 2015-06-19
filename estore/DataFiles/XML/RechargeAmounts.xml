@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<RechargeAmounts>
+  <RechargeAmount>
+    <Amount>0.10</Amount>
+  </RechargeAmount>
+
+  <RechargeAmount>
+    <Amount>10</Amount>
+  </RechargeAmount>
+	<RechargeAmount>
+    <Amount>25</Amount>
+  </RechargeAmount>
+	<RechargeAmount>
+    <Amount>0.01</Amount>
+  </RechargeAmount>
+
+</RechargeAmounts>

@@ -1,0 +1,1170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddResource1.Text" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="btnAddResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCSVResource1.Text" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="btnCSVResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDeleteResource1.Text" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="btnDeleteResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnModifyResource1.Text" xml:space="preserve">
+    <value>Modify</value>
+  </data>
+  <data name="btnModifyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnResetResource1.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="btnResetResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnSearchResource1.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="btnSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkExactResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkExactResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPBXHangUpResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPBXHangUpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPBXRecordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPBXRecordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPBXTransferResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPBXTransferResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPBXVoiceMailResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="chkPBXVoiceMailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.ConfirmText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.ConfirmTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.DataTextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridButtonColumnResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.ImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="imgAutoProvisioningResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgAutoProvisioningResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgExportResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgExportResource1.ToolTip" xml:space="preserve">
+    <value>Export Data</value>
+  </data>
+  <data name="imgImportResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgImportResource1.ToolTip" xml:space="preserve">
+    <value>Import Data</value>
+  </data>
+  <data name="imgSnomDeviceResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="imgSnomDeviceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Incoming Call</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccountInfoResource1.Text" xml:space="preserve">
+    <value>Account Information</value>
+  </data>
+  <data name="lblAccountInfoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAccountStatusResource1.Text" xml:space="preserve">
+    <value>Account Status</value>
+  </data>
+  <data name="lblAccountStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblActionPermissionResource1.Text" xml:space="preserve">
+    <value>Action Permissions</value>
+  </data>
+  <data name="lblActionPermissionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCallerIDResource1.Text" xml:space="preserve">
+    <value>Caller ID</value>
+  </data>
+  <data name="lblCallerIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCallForwardingOptResource1.Text" xml:space="preserve">
+    <value>Call Forwarding Option</value>
+  </data>
+  <data name="lblCallForwardingOptResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExactResource1.Text" xml:space="preserve">
+    <value>Exact</value>
+  </data>
+  <data name="lblExactResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblExtensionResource1.Text" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="lblExtensionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFirstNameResource1.Text" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="lblFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLastNameResource1.Text" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="lblLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLevelPermissionResource1.Text" xml:space="preserve">
+    <value>User role</value>
+  </data>
+  <data name="lblLevelPermissionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblLongDistanceResource1.Text" xml:space="preserve">
+    <value>Long Distance</value>
+  </data>
+  <data name="lblLongDistanceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMaxDurationResource1.Text" xml:space="preserve">
+    <value>Max. Voicemail&lt;br&gt; Duration(sec.)</value>
+  </data>
+  <data name="lblMaxDurationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMaxMessageResource1.Text" xml:space="preserve">
+    <value>Max. Message</value>
+  </data>
+  <data name="lblMaxMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMaxRingTimeResource1.Text" xml:space="preserve">
+    <value>Max. Ring Time(sec.)</value>
+  </data>
+  <data name="lblMaxRingTimeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblPageSizeResource1.Text" xml:space="preserve">
+    <value>Page Size</value>
+  </data>
+  <data name="lblPageSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchByResource1.Text" xml:space="preserve">
+    <value>Search By</value>
+  </data>
+  <data name="lblSearchByResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchForResource1.Text" xml:space="preserve">
+    <value>Search For</value>
+  </data>
+  <data name="lblSearchForResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSearchResource1.Text" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="lblSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSecurityResource1.Text" xml:space="preserve">
+    <value>Security for PBX Console</value>
+  </data>
+  <data name="lblSecurityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSipPasswordResource1.Text" xml:space="preserve">
+    <value>SIP Password(*)</value>
+  </data>
+  <data name="lblSipPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSipUsernameResource1.Text" xml:space="preserve">
+    <value>SIP Username</value>
+  </data>
+  <data name="lblSipUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTimeZoneResource1.Text" xml:space="preserve">
+    <value>Time Zone(*)</value>
+  </data>
+  <data name="lblTimeZoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>Manage Phone Extensions</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblUsageLimitResource1.Text" xml:space="preserve">
+    <value>Usage limit</value>
+  </data>
+  <data name="lblUsageLimitResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVideoEnabledResource1.Text" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="lblVideoEnabledResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVoiceMailEnabledResource1.Text" xml:space="preserve">
+    <value>Voice Mail</value>
+  </data>
+  <data name="lblVoiceMailEnabledResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVoiceMailLoginResource1.Text" xml:space="preserve">
+    <value>Voice Mail Login</value>
+  </data>
+  <data name="lblVoiceMailLoginResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVoiceMailPasswordResource1.Text" xml:space="preserve">
+    <value>Voice Mail Password(*)</value>
+  </data>
+  <data name="lblVoiceMailPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblVoiceMailToEmailResource1.Text" xml:space="preserve">
+    <value>Voice Mail To Email</value>
+  </data>
+  <data name="lblVoiceMailToEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWebPasswordResource1.Text" xml:space="preserve">
+    <value>Web Password(*)</value>
+  </data>
+  <data name="lblWebPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblWebUsernameResource1.Text" xml:space="preserve">
+    <value>Web Username(Email)(*)</value>
+  </data>
+  <data name="lblWebUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkAutoProvisioningResource1.Text" xml:space="preserve">
+    <value>Auto Provisioning</value>
+  </data>
+  <data name="lnkAutoProvisioningResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lnkSnomDeviceResource1.Text" xml:space="preserve">
+    <value>Snom Device</value>
+  </data>
+  <data name="lnkSnomDeviceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Estore</value>
+  </data>
+  <data name="panelAutoProvisioningExpanderResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelAutoProvisioningExpanderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelAutoProvisioningResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelAutoProvisioningResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelSnomDeviceExpanderResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelSnomDeviceExpanderResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelSnomDeviceResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="panelSnomDeviceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSearchResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSearchResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Text" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="RadComboBoxItemResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Value" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="RadComboBoxItemResource10.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="RadComboBoxItemResource10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource10.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource11.Text" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="RadComboBoxItemResource11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource11.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource12.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="RadComboBoxItemResource12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource12.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource13.Text" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="RadComboBoxItemResource13.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource13.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource14.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="RadComboBoxItemResource14.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource14.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource15.Text" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="RadComboBoxItemResource15.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource15.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource16.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="RadComboBoxItemResource16.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource16.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource17.Text" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="RadComboBoxItemResource17.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource17.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource18.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="RadComboBoxItemResource18.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource18.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource19.Text" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="RadComboBoxItemResource19.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource19.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadComboBoxItemResource2.Text" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="RadComboBoxItemResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource2.Value" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="RadComboBoxItemResource20.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="RadComboBoxItemResource20.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource20.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource21.Text" xml:space="preserve">
+    <value>Internal</value>
+  </data>
+  <data name="RadComboBoxItemResource21.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource21.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadComboBoxItemResource22.Text" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="RadComboBoxItemResource22.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource22.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource23.Text" xml:space="preserve">
+    <value>Enabled</value>
+  </data>
+  <data name="RadComboBoxItemResource23.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource23.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource24.Text" xml:space="preserve">
+    <value>Disabled</value>
+  </data>
+  <data name="RadComboBoxItemResource24.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource24.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource25.Text" xml:space="preserve">
+    <value>None</value>
+  </data>
+  <data name="RadComboBoxItemResource25.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource25.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource26.Text" xml:space="preserve">
+    <value>User</value>
+  </data>
+  <data name="RadComboBoxItemResource26.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource26.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource27.Text" xml:space="preserve">
+    <value>Administrator</value>
+  </data>
+  <data name="RadComboBoxItemResource27.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource27.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadComboBoxItemResource3.Text" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="RadComboBoxItemResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource3.Value" xml:space="preserve">
+    <value>50</value>
+  </data>
+  <data name="RadComboBoxItemResource4.Text" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="RadComboBoxItemResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource4.Value" xml:space="preserve">
+    <value>100</value>
+  </data>
+  <data name="RadComboBoxItemResource5.Text" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="RadComboBoxItemResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource5.Value" xml:space="preserve">
+    <value>All</value>
+  </data>
+  <data name="RadComboBoxItemResource6.Text" xml:space="preserve">
+    <value>SIP Username</value>
+  </data>
+  <data name="RadComboBoxItemResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource6.Value" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="RadComboBoxItemResource7.Text" xml:space="preserve">
+    <value>Extension</value>
+  </data>
+  <data name="RadComboBoxItemResource7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource7.Value" xml:space="preserve">
+    <value>PBXExtension</value>
+  </data>
+  <data name="RadComboBoxItemResource8.Text" xml:space="preserve">
+    <value>Web Username</value>
+  </data>
+  <data name="RadComboBoxItemResource8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource8.Value" xml:space="preserve">
+    <value>PBXWebUsername</value>
+  </data>
+  <data name="RadComboBoxItemResource9.Text" xml:space="preserve">
+    <value>Caller ID</value>
+  </data>
+  <data name="RadComboBoxItemResource9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource9.Value" xml:space="preserve">
+    <value>CallerID</value>
+  </data>
+  <data name="rcbAccountStatusResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbAccountStatusResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbAccountStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbCallForwardingResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbCallForwardingResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbCallForwardingResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbIncommingEnabledResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbIncommingEnabledResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbIncommingEnabledResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbLongDistanceResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbLongDistanceResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbLongDistanceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbPageSizeResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbPageSizeResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbPageSizeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbPermissionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbPermissionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbPermissionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSearchByResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSearchByResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSearchByResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbTimeZoneResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbTimeZoneResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbTimeZoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbVideoEnabledResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbVideoEnabledResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbVideoEnabledResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbVoiceMailEnabledResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbVoiceMailEnabledResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbVoiceMailEnabledResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbVoiceMailToEmailResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbVoiceMailToEmailResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbVoiceMailToEmailResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.BackImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.ClientSettings.ClientMessages.DragToGroupOrReorder" xml:space="preserve">
+    <value>Drag to group or reorder</value>
+  </data>
+  <data name="rgSearchResultsResource1.ClientSettings.ClientMessages.DragToResize" xml:space="preserve">
+    <value>Drag to resize</value>
+  </data>
+  <data name="rgSearchResultsResource1.ClientSettings.ClientMessages.DropHereToReorder" xml:space="preserve">
+    <value>Drop here to reorder</value>
+  </data>
+  <data name="rgSearchResultsResource1.ClientSettings.ClientMessages.PagerTooltipFormatString" xml:space="preserve">
+    <value>Page: &lt;b&gt;{0}&lt;/b&gt; out of &lt;b&gt;{1}&lt;/b&gt; pages</value>
+  </data>
+  <data name="rgSearchResultsResource1.FilterMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.GroupingSettings.CollapseTooltip" xml:space="preserve">
+    <value>Collapse group</value>
+  </data>
+  <data name="rgSearchResultsResource1.GroupingSettings.ExpandTooltip" xml:space="preserve">
+    <value>Expand group</value>
+  </data>
+  <data name="rgSearchResultsResource1.GroupingSettings.GroupByFieldsSeparator" xml:space="preserve">
+    <value>; </value>
+  </data>
+  <data name="rgSearchResultsResource1.GroupingSettings.GroupContinuedFormatString" xml:space="preserve">
+    <value>... group continued from the previous page. </value>
+  </data>
+  <data name="rgSearchResultsResource1.GroupingSettings.GroupContinuesFormatString" xml:space="preserve">
+    <value> Group continues on the next page.</value>
+  </data>
+  <data name="rgSearchResultsResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
+    <value>Showing {0} of {1} items.</value>
+  </data>
+  <data name="rgSearchResultsResource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
+    <value> ({0})</value>
+  </data>
+  <data name="rgSearchResultsResource1.GroupingSettings.UnGroupTooltip" xml:space="preserve">
+    <value>Drag out of the bar to ungroup</value>
+  </data>
+  <data name="rgSearchResultsResource1.GroupPanel.Text" xml:space="preserve">
+    <value>Drag a column header and drop it here to group by that column</value>
+  </data>
+  <data name="rgSearchResultsResource1.GroupPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.HeaderContextMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="rgSearchResultsResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="rgSearchResultsResource1.HierarchySettings.SelfCollapseTooltip" xml:space="preserve">
+    <value>Self reference collapse</value>
+  </data>
+  <data name="rgSearchResultsResource1.HierarchySettings.SelfExpandTooltip" xml:space="preserve">
+    <value>Self reference expand</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.CommandItemSettings.AddNewRecordImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.CommandItemSettings.AddNewRecordText" xml:space="preserve">
+    <value>Add new record</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.CommandItemSettings.RefreshImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.EditFormSettings.CaptionFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.CollapseImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.ExpandImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ExpandCollapseColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.FilterExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No child records to display.</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No records to display.</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Next Pages</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.PagerStyle.NextPageText" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Change page: {4} &amp;nbsp;Displaying page {0} of {1}, items {2} to {3} of {5}.</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Previous Pages</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.PagerStyle.PrevPageText" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.RowIndicatorColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.Summary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.MasterTableView.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Next Pages</value>
+  </data>
+  <data name="rgSearchResultsResource1.PagerStyle.NextPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="rgSearchResultsResource1.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Change page: {4} &amp;nbsp;Displaying page {0} of {1}, items {2} to {3} of {5}.</value>
+  </data>
+  <data name="rgSearchResultsResource1.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Previous Pages</value>
+  </data>
+  <data name="rgSearchResultsResource1.PagerStyle.PrevPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgSearchResultsResource1.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="rgSearchResultsResource1.SortingSettings.SortedAscToolTip" xml:space="preserve">
+    <value>Sorted asc</value>
+  </data>
+  <data name="rgSearchResultsResource1.SortingSettings.SortedDescToolTip" xml:space="preserve">
+    <value>Sorted desc</value>
+  </data>
+  <data name="rgSearchResultsResource1.SortingSettings.SortToolTip" xml:space="preserve">
+    <value>Click here to sort</value>
+  </data>
+  <data name="rgSearchResultsResource1.StatusBarSettings.LoadingText" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rgSearchResultsResource1.StatusBarSettings.ReadyText" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="rgSearchResultsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCallerIDResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCallerIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExtensionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtExtensionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFirstNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtLastNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxDurationResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxDurationResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxMessageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxMessageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxRingTimeResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtMaxRingTimeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrefixSipUsernameResource1.Text" xml:space="preserve">
+    <value>102</value>
+  </data>
+  <data name="txtPrefixSipUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchForResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSearchForResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSipPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSipPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSipUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSipUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsageLimitResource1.Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtUsageLimitResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVoiceMailLoginResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVoiceMailLoginResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVoiceMailPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtVoiceMailPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWebPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWebPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWebUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtWebUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbCallForwardingItemResource1.Text" xml:space="preserve">
+    <value>Disable</value>
+  </data>
+  <data name="rcbCallForwardingItemResource2.Text" xml:space="preserve">
+    <value>Always</value>
+  </data>
+  <data name="rcbCallForwardingItemResource3.Text" xml:space="preserve">
+    <value>No Answer</value>
+  </data>
+  <data name="rcbCallForwardingItemResource4.Text" xml:space="preserve">
+    <value>When Busy</value>
+  </data>
+</root>

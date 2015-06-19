@@ -1,0 +1,687 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnCSVResource1.Text" xml:space="preserve">
+    <value>CSV</value>
+  </data>
+  <data name="btnCSVResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDisplayResource1.Text" xml:space="preserve">
+    <value>Afficher</value>
+  </data>
+  <data name="btnDisplayResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnExportResource1.Text" xml:space="preserve">
+    <value>Exporter</value>
+  </data>
+  <data name="btnExportResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlReportTypeResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlReportTypeResource1.LoadingMessage" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="ddlReportTypeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlServicesResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlServicesResource1.LoadingMessage" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="ddlServicesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Période du</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>A</value>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource1.Text" xml:space="preserve">
+    <value>Option avancé Historique</value>
+  </data>
+  <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>Appels</value>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>Minutes</value>
+  </data>
+  <data name="Label5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>Coût</value>
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label7Resource1.Text" xml:space="preserve">
+    <value>Fuseau horaire</value>
+  </data>
+  <data name="Label7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>Choix du service</value>
+  </data>
+  <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label9Resource1.Text" xml:space="preserve">
+    <value>Type d'historique</value>
+  </data>
+  <data name="Label9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblCountResource1.Text" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="lblCountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Text" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="RadComboBoxItemResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Value" xml:space="preserve">
+    <value>Pays</value>
+  </data>
+  <data name="RadComboBoxItemResource2.Text" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="RadComboBoxItemResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource2.Value" xml:space="preserve">
+    <value>Ville</value>
+  </data>
+  <data name="RadComboBoxItemResource3.Text" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="RadComboBoxItemResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource3.Value" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.CellDayFormat" xml:space="preserve">
+    <value>%d</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.ColumnHeaderImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.ColumnHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.DateRangeSeparator" xml:space="preserve">
+    <value> - </value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.DayCellToolTipFormat" xml:space="preserve">
+    <value>dddd, MMMM dd, yyyy</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.FastNavigationNextImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.FastNavigationNextText" xml:space="preserve">
+    <value>&amp;gt;&amp;gt;</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.FastNavigationPrevImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.FastNavigationPrevText" xml:space="preserve">
+    <value>&amp;lt;&amp;lt;</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.FastNavigationSettings.CancelButtonCaption" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.FastNavigationSettings.DateIsOutOfRangeMessage" xml:space="preserve">
+    <value>Date hors limite</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.FastNavigationSettings.OkButtonCaption" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.FastNavigationSettings.TodayButtonCaption" xml:space="preserve">
+    <value>Aujourd'hui</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.NavigationNextImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.NavigationNextText" xml:space="preserve">
+    <value>&amp;gt;</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.NavigationPrevImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.NavigationPrevText" xml:space="preserve">
+    <value>&amp;lt;</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.RowHeaderImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.RowHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.TitleFormat" xml:space="preserve">
+    <value>MMMM aaaa</value>
+  </data>
+  <data name="rdtpFromResource1.Calendar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.ViewSelectorImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.Calendar.ViewSelectorText" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="rdtpFromResource1.DateInput.Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.DateInput.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.DatePopupButton.ToolTip" xml:space="preserve">
+    <value>Afficher le calendrier</value>
+  </data>
+  <data name="rdtpFromResource1.TimePopupButton.ToolTip" xml:space="preserve">
+    <value>Afficher l'horloge</value>
+  </data>
+  <data name="rdtpFromResource1.TimeView.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.TimeView.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.TimeView.TimeFormat" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="rdtpFromResource1.TimeView.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpFromResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.CellDayFormat" xml:space="preserve">
+    <value>%d</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.ColumnHeaderImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.ColumnHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.DateRangeSeparator" xml:space="preserve">
+    <value> - </value>
+  </data>
+  <data name="rdtpToResource1.Calendar.DayCellToolTipFormat" xml:space="preserve">
+    <value>dddd, MMMM dd, yyyy</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.FastNavigationNextImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.FastNavigationNextText" xml:space="preserve">
+    <value>&amp;gt;&amp;gt;</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.FastNavigationPrevImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.FastNavigationPrevText" xml:space="preserve">
+    <value>&amp;lt;&amp;lt;</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.FastNavigationSettings.CancelButtonCaption" xml:space="preserve">
+    <value>Annuler</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.FastNavigationSettings.DateIsOutOfRangeMessage" xml:space="preserve">
+    <value>Date hors limite</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.FastNavigationSettings.OkButtonCaption" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.FastNavigationSettings.TodayButtonCaption" xml:space="preserve">
+    <value>Aujourd'hui</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.NavigationNextImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.NavigationNextText" xml:space="preserve">
+    <value>&amp;gt;</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.NavigationPrevImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.NavigationPrevText" xml:space="preserve">
+    <value>&amp;lt;</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.RowHeaderImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.RowHeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.TitleFormat" xml:space="preserve">
+    <value>MMMM aaaa</value>
+  </data>
+  <data name="rdtpToResource1.Calendar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.ViewSelectorImage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.Calendar.ViewSelectorText" xml:space="preserve">
+    <value>x</value>
+  </data>
+  <data name="rdtpToResource1.DateInput.Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.DateInput.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.DatePopupButton.ToolTip" xml:space="preserve">
+    <value>Afficher le calendrier</value>
+  </data>
+  <data name="rdtpToResource1.TimePopupButton.ToolTip" xml:space="preserve">
+    <value>Afficher l'horloge</value>
+  </data>
+  <data name="rdtpToResource1.TimeView.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.TimeView.HeaderText" xml:space="preserve">
+    <value>t</value>
+  </data>
+  <data name="rdtpToResource1.TimeView.TimeFormat" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.TimeView.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rdtpToResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.BackImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.ClientSettings.ClientMessages.DragToGroupOrReorder" xml:space="preserve">
+    <value>Glisser vers le groupe ou reorganiser</value>
+  </data>
+  <data name="rgDetailsResource1.ClientSettings.ClientMessages.DragToResize" xml:space="preserve">
+    <value>Glisser pour redimensionner</value>
+  </data>
+  <data name="rgDetailsResource1.ClientSettings.ClientMessages.DropHereToReorder" xml:space="preserve">
+    <value>Déposer ici pour reorganiser</value>
+  </data>
+  <data name="rgDetailsResource1.ClientSettings.ClientMessages.PagerTooltipFormatString" xml:space="preserve">
+    <value>Page: &lt;b&gt;{0}&lt;/b&gt; sur  &lt;b&gt;{1}&lt;/b&gt; pages</value>
+  </data>
+  <data name="rgDetailsResource1.FilterMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.GroupingSettings.CollapseTooltip" xml:space="preserve">
+    <value>Masquer le groupe</value>
+  </data>
+  <data name="rgDetailsResource1.GroupingSettings.ExpandTooltip" xml:space="preserve">
+    <value>Détailler le groupe</value>
+  </data>
+  <data name="rgDetailsResource1.GroupingSettings.GroupByFieldsSeparator" xml:space="preserve">
+    <value>; </value>
+  </data>
+  <data name="rgDetailsResource1.GroupingSettings.GroupContinuedFormatString" xml:space="preserve">
+    <value>…suite du groupe de la page précédente</value>
+  </data>
+  <data name="rgDetailsResource1.GroupingSettings.GroupContinuesFormatString" xml:space="preserve">
+    <value>Le groupe continue à la page suivante</value>
+  </data>
+  <data name="rgDetailsResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
+    <value>Affichage {0} sur {1} article.</value>
+  </data>
+  <data name="rgDetailsResource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
+    <value> ({0})</value>
+  </data>
+  <data name="rgDetailsResource1.GroupingSettings.UnGroupTooltip" xml:space="preserve">
+    <value>Glisser hors de la barre pour dégrouper</value>
+  </data>
+  <data name="rgDetailsResource1.GroupPanel.Text" xml:space="preserve">
+    <value>Glissez l'entête d'une colonne et placez là ici pour l'ajouter au groupe</value>
+  </data>
+  <data name="rgDetailsResource1.GroupPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.HeaderContextMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Masquer</value>
+  </data>
+  <data name="rgDetailsResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Détailler </value>
+  </data>
+  <data name="rgDetailsResource1.HierarchySettings.SelfCollapseTooltip" xml:space="preserve">
+    <value>Masquer Self reference </value>
+  </data>
+  <data name="rgDetailsResource1.HierarchySettings.SelfExpandTooltip" xml:space="preserve">
+    <value>Détailler Self reference expand</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.CommandItemSettings.AddNewRecordImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.CommandItemSettings.AddNewRecordText" xml:space="preserve">
+    <value>Ajouter nouvel enrégistrement</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.CommandItemSettings.RefreshImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
+    <value>Actualiser</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.EditFormSettings.CaptionFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.CollapseImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.ExpandImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ExpandCollapseColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.FilterExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>Aucun enregistrement d'enfants à afficher</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>Aucun enregistrement à afficher.</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Pages suivantes</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.PagerStyle.NextPageText" xml:space="preserve">
+    <value>Suivant</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Page suivante</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Changer la page: {4} &amp;nbsp;Affichage de la page {0} sur {1}, article {2} à {3} sur {5}.</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Pages précédentes</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.PagerStyle.PrevPageText" xml:space="preserve">
+    <value>Précédent</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Page précédente</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.RowIndicatorColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.Summary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.MasterTableView.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Pages Suivantes</value>
+  </data>
+  <data name="rgDetailsResource1.PagerStyle.NextPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Page Suivante</value>
+  </data>
+  <data name="rgDetailsResource1.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Changer la page: {4} &amp;nbsp;Affichage de la page {0} sur {1}, article {2} à {3} sur {5}.</value>
+  </data>
+  <data name="rgDetailsResource1.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Pages précédentes</value>
+  </data>
+  <data name="rgDetailsResource1.PagerStyle.PrevPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgDetailsResource1.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Page précédente</value>
+  </data>
+  <data name="rgDetailsResource1.SortingSettings.SortedAscToolTip" xml:space="preserve">
+    <value>Trie asc</value>
+  </data>
+  <data name="rgDetailsResource1.SortingSettings.SortedDescToolTip" xml:space="preserve">
+    <value>Trie desc</value>
+  </data>
+  <data name="rgDetailsResource1.SortingSettings.SortToolTip" xml:space="preserve">
+    <value>Cliquer ici pour trier</value>
+  </data>
+  <data name="rgDetailsResource1.StatusBarSettings.LoadingText" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="rgDetailsResource1.StatusBarSettings.ReadyText" xml:space="preserve">
+    <value>Lecture</value>
+  </data>
+  <data name="rgDetailsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCountResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCountResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTClientCostResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTClientCostResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTClientUsageResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTClientUsageResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTQuantityResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTQuantityResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

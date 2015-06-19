@@ -1,0 +1,284 @@
+/*layout styles */
+
+	body, td {
+	color: #666666;
+	font-size: 11px;
+	font-family: Arial, Helvetica, sans-serif;
+	}
+
+a, a:link, a:visited {
+	color:#666666;
+	text-decoration:none;
+	text-indent:1px;
+	background-image: url(/i/blank.gif);
+
+
+}
+
+a:hover {
+	text-decoration:underline;
+	background:#fff;
+	/*text-indent:0 auto;*/
+	background-image: none;
+
+}
+
+
+#normal a, a:visited {
+	color:#000000;
+	text-decoration:none;
+
+	background:none;
+}
+
+#normal a:hover {
+	text-decoration:underline;
+	background:none;
+
+}
+
+
+
+/*headings */
+
+	h1 {
+	font-size:25px;
+ 	line-height: 1em;
+ 	margin:0px auto;
+	color:#666666; 	
+}
+
+
+	h2 {
+	font-size:20px;
+ 	margin-top:4px auto;
+ 	padding-bottom:10px auto;
+ 	display:inline;
+}
+
+
+	h3 {
+	font-size:18px;
+	line-height:18px;
+ 	margin:0px auto;
+}
+
+	h4 {
+	font-size:22px;
+ 	line-height: 1.8em;
+ 	margin:0px auto;
+} 
+
+	h4#white {
+	font-size:22px;
+ 	line-height: 1.8em;
+ 	margin:0px auto;
+}
+
+	h5 {
+	font-size:14px;
+	line-height:14px;
+ 	margin:0px auto;
+}
+
+	h6 {
+	font-size:16px;
+	line-height:16px;
+ 	margin:0px auto;
+}
+
+	h6#white {
+	font-size:16px;
+	line-height:16px;
+ 	margin:0px auto;
+ 	color:#FFFFFF;
+}
+
+	p#white {
+	font-size:10px;
+	}
+		
+	.price h4 {
+	display:inline;
+	font-size:20px;
+ 	line-height: 1.6em;
+ 	margin:0px auto;
+	
+	}
+
+	.sifrtxt {
+	font-size:10px;
+	}
+	
+	.green {
+	color:#A3C27F;
+	font-size:18px;
+	line-height:18px;
+ 	margin:0px auto;
+	}
+	
+	pre {
+	font-size:38px;
+	line-height:38px;
+ 	margin:0px auto;
+ 	display:inline;
+ 	vertical-align:super;
+	}
+
+
+	#nav a, a:visited {
+	background-image: url("../i/nav_icon_cross.gif");
+	background-repeat: no-repeat;
+	background-position: left center;
+	width:85px;
+	display:block;
+	text-decoration:none;
+	text-indent:16px;
+	color:#666666;
+	vertical-align:middle;
+	float:left;
+	padding:8px;
+}
+
+	#nav a:visited {
+	background-image: url("../i/blank.gif");
+	background-repeat: no-repeat;
+	background-position: left center;
+	width:85px;
+	display:block;
+	text-decoration:none;
+	text-indent:16px;
+	color:#666666;
+	vertical-align:middle;
+	float:left;
+	padding:8px;
+}
+
+	#nav a:hover {
+	background: #ffffff;
+	background-image: url("../i/nav_icon_cross.gif");
+	background-repeat: no-repeat;
+	background-position: left center;
+	color:#A3C380;
+}
+
+	#nav_inner {
+	width:500px;
+	}
+
+	#nav_inner a, a:visited {
+	background-image: url("../i/nav_icon_cross.gif");
+	background-repeat: no-repeat;
+	background-position: left center;
+	width:auto;
+	display:inline;
+	text-decoration:none;
+	text-indent:12px;
+	color:#666666;
+	vertical-align:middle;
+	float:left;
+	padding:6px;
+}
+
+	#nav_inner a:hover {
+	background: #E0EBD4;
+	background-image: url("../i/nav_icon_cross.gif");
+	background-repeat: no-repeat;
+	background-position: left center;
+
+}
+
+	.sidebarheading {
+	background: #D0E0C3 url("../i/bg_sidebar_heading.jpg");
+	background-repeat: repeat-y;
+	padding:4px;
+	font-weight:bold;
+	font-size:11px;
+	text-indent:12px;
+	width:148px;
+	border-bottom: 1px solid #A3C380;
+}
+	
+    .whitediv {
+	width:156px;
+	height:1px;
+	border-top:1px solid #fff; 
+	margin-bottom:8px;
+}
+
+	.formFieldDefault {
+	font-size:10px;
+	color:#666666;
+}
+
+	.spacer {
+	margin:15px;
+	}
+	
+	#buybox {
+	width:200px;
+	border:1px solid #D1E0BF;
+	float:right;
+	line-height:2.5em;
+	margin-left:20px;
+	margin-bottom:20px;
+	}
+	
+	#buybox strong {
+	background:#D0E0C3;
+	border-bottom:1px solid #BAD2A2;
+	display:block;
+	padding-left:18px;
+	margin-bottom:6px;
+	
+	}
+	
+	#buybox #sep {
+	margin-top:6px;
+	margin-bottom:8px;
+	border-bottom: 1px solid #ECF2E6;
+	}
+	
+	.buttonDefault {
+	color:#666666;
+	border:1px solid #A3C380;
+	font-size:11px;
+	display:inline;
+	padding:4px;
+	margin:2px;
+	width:auto;
+	height:24px;
+	cursor:pointer;
+	background: #ffffff;
+
+	}
+	
+	.buttonDefault:hover {
+	border:1px solid #A3C380;
+	font-size:11px;
+	display:inline;
+	padding:2px;
+	margin:2px;
+	width:auto;
+	height:24px;
+	cursor:pointer;
+	color:#ffffff;
+	background: #A3C380;
+	}
+	
+	.line {
+	margin : 0;
+	margin-bottom : 12px;
+	margin-top : 6px;
+	padding : 0;
+	font-size : 2px;
+	height : 2px;
+	display : block;
+	border : 0 none inherit;
+	background-image: url(../i/divdot.gif);
+	background-repeat:repeat-x;
+	
+	}
+	
+
+	

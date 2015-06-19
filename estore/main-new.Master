@@ -1,0 +1,254 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="main.master.cs" Inherits="CCEstore.MyMainPage" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<%@ Register TagPrefix="cc" TagName="langBar" Src="wucLanguageBar.ascx" %>
+<%@ Register TagPrefix="url" Namespace="Intelligencia.UrlRewriter" Assembly="Intelligencia.UrlRewriter" %>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+    <meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Estore</title>
+    <link media="all" href="style.css" type="text/css" rel="stylesheet">
+    <script src="./javaScript/yahoo_2.0.0-b3.js"></script>
+    <script src="./javaScript/event_2.0.0-b3.js"></script>
+    <script src="./javaScript/dom_2.0.2-b3.js"></script>
+    <script src="./javaScript/dragdrop_2.0.0-b3.js"></script>
+    <script src="./js/moz-antialias.js"></script>
+    <script src="./script/minmax.js"></script>
+    <link href="Css/CCEstore.css" rel="stylesheet" type="text/css">
+    <link href="css/moz-antialias.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link href="css/RoundedCornerFF.css" rel="stylesheet" type="text/css">
+    <link href="css/MainMaster.css" rel="stylesheet" type="text/css">
+    
+    <link href="css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript">
+        //Drag and Drop FX
+        function initDragDrop() {
+            var z = 100;
+            var zTop = function () { z += 1; this.getEl().style.zIndex = z; };
+            var aModule = YAHOO.util.Dom.getElementsByClassName('module', 'div');
+            for (var i = 0; i < aModule.length; i++) {
+                var dnd = new YAHOO.util.DD(aModule[i].id);
+                dnd.onMouseDown = zTop;
+            }
+        }
+        YAHOO.util.Event.addListener(window, 'load', initDragDrop);
+        //Drag and Drop FX 
+
+    </script>
+</head>
+<body>
+    <script type="text/javascript" language="javascript">
+        function rtsMainSelected(sender, args)
+        {
+            var selectedtab = args.get_tab().get_text();
+            var rtsMain = $find("<%=rtsMain.ClientID%>");
+
+            if  ( selectedtab =="<%= rtsMain.Tabs[ rtsMain.Tabs.Count-1].Text %>" )
+            {
+
+                var t = '<%= Session["CustomerID"] %>';
+
+                if ( t== null || t=="" )
+                {
+                    args.set_cancel(true);
+                }
+                else{
+                    return;
+                }
+
+                var win = $find("<%= radwinLogin.ClientID %>");
+                if (win != null) win.show();
+
+                tab= rtsMain.findTabByValue("990");
+                tab.unselect();
+
+                return;
+
+            }
+
+            return;
+        }
+        
+
+        function OnClientclose(radWindow)
+        {
+
+            if (radWindow.argument == "Register")
+                window.location = "services.aspx";
+            else if (radWindow.argument == "CardLoggedIn")
+                window.location = "CD_CardDetail.aspx";
+            else if (radWindow.argument == "CustomerLoggedIn") {
+                var welcome = "0";
+                <% if (Session["WELCOME_PAGE"]!=null) { %>
+                    welcome = <%=Session["WELCOME_PAGE"].ToString() %>;
+                <%}%>
+                if (welcome == "1")
+                window.location = "Welcome.aspx";
+                else
+                window.location = "SD_AccountSummary.aspx";
+            }
+            else {
+                var rtsMain = $find("<%=rtsMain.ClientID%>");
+
+                //var tab = rtsMain.findTabByText("Account");
+                var tab = rtsMain.findTabByValue("200");
+                tab.unselect();
+            }
+        } 
+
+        /* 2009.5.15 StevenY not in use 
+        function rwSelect_OnClientclose(radWindow)
+        {         
+            alert("registerHS.aspx");
+            if ( radWindow.argument != null)
+                window.location="RegisterHS.aspx?" + radWindow.argument;
+        } 
+        */
+        
+        function openLogin()
+        {
+            
+            var t = '<%= Session["CustomerID"] %>';
+            
+            if ( t == null || t == "" )
+            {
+                var win = $find("<%= radwinLogin.ClientID %>");
+                if (win != null) win.show();
+                return false;
+            }             
+            else
+            {
+                //alert("already logged in");
+                window.location="SD_AccountSummary.aspx";
+                return false;
+            }
+        }
+
+        function openRates(profileID) {
+            if (profileID != null || profileID != "") {
+                var oWnd = $find("<%= radwinRates.ClientID %>");
+                oWnd.setUrl("./SD_Rates.aspx?profileID=" + profileID);
+                oWnd.show();
+                return false;
+            }
+            else {
+                alert("Service not selected");
+                return false;
+            }
+        }
+         
+    </script>
+    <url:Form ID="form1" runat="server">
+        <asp:ScriptManager ID="ScriptManager1" runat="server">
+        </asp:ScriptManager>
+        <div id="wrapper">
+            <div id="headernav">
+                <div id="toptag">
+                    <asp:Label ID="lblWelcome" runat="server" Font-Bold="True" meta:resourcekey="lblWelcomeResource1"></asp:Label>
+                    <asp:LinkButton ID="lbLogOut" runat="server" OnClick="lbLogOut_Click" meta:resourcekey="lbLogOutResource1">Log Out</asp:LinkButton>
+                </div>
+                <div id="topnav">
+                    <div class="l">
+                    </div>
+                    <div class="m">
+                        <div style="overflow: hidden; float: left;">
+                            <ul class="rtsUL">
+                                <li class="rtsLI"><a class="rtsLink" href="main.aspx"><span class="rtsOut"><span
+                                    class="rtsIn"><span class="rtsTxt">
+                                        <asp:Label ID="lblHome" runat="server" meta:resourcekey="lblHomeResource1">Home</asp:Label></span></span></span></a></li>
+                                <li class="rtsLI"><a class="rtsLink" href="services.aspx"><span class="rtsOut"><span
+                                    class="rtsIn"><span class="rtsTxt">
+                                        <asp:Label ID="lblOurService" runat="server" meta:resourcekey="lblOurServiceResource1">Our Service</asp:Label></span></span></span></a></li>
+                                <li class="rtsLI"><a class="rtsLink" href="AboutUs.aspx"><span class="rtsOut"><span
+                                    class="rtsIn"><span class="rtsTxt">
+                                        <asp:Label ID="lblAboutUs" runat="server" meta:resourcekey="lblAboutUsResource1">About Us</asp:Label></span></span></span></a></li>
+                                <li class="rtsLI"><a class="rtsLink" href="ContactUs.aspx"><span class="rtsOut"><span
+                                    class="rtsIn"><span class="rtsTxt">
+                                        <asp:Label ID="lblContactUs" runat="server" meta:resourcekey="lblContactUsResource1">Contact Us</asp:Label></span></span></span></a></li>
+                            </ul>
+                        </div>
+                        <div style="float: left; margin-left: 20px;">
+                            <cc:langBar ID="langBar1" runat="server" />
+                        </div>
+                    </div>
+                    <div class="r">
+                    </div>
+                </div>
+                <div id="smallnav">
+                    <div id="ctl00_langBar1_RadTabStrip1" class="RadTabStrip RadTabStrip_Test RadTabStripTop_Test ">
+                        <!-- 2008.3.1314.20 -->
+                        <div class="rtsLevel rtsLevel1">
+                            <ul class="rtsUL">
+                                <li class="rtsLI"><a class="rtsLink" href="basket.aspx"><span class="rtsOut"><span
+                                    class="rtsIn"><span class="rtsTxt">
+                                        <asp:Label ID="lbViewCart" runat="server" Text="View Cart" meta:resourcekey="lbViewCartResource1"></asp:Label></span></span></span></a></li>
+                                <li>
+                                    <asp:LinkButton ID="lbLogin" runat="server" Text="My Account" NavigateUrl="SD_AccountSummary.aspx"
+                                        OnClientClick="return openLogin();" meta:resourcekey="lbLoginCartResource1"></asp:LinkButton>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Begin Header -->
+            <div id="header">
+                <div class="logo">
+                    <h1 class="lineone">
+                        <span>My</span> Company</h1>
+                    <h2 class="linetwo">
+                        "Your online Phone"</h2>
+                </div>
+            </div>
+            <!-- End Header -->
+            <!-- Begin Navigation -->
+            <div id="leftnavigation">
+            </div>
+            <div id="navigation">
+                <WebCtlIpsmarx:RadTabStrip ID="rtsMain" runat="server" AutoPostBack="true" meta:resourcekey="rtsMainResource1"
+                    OnTabClick="rtsMain_TabClick" Font-Size="Medium" CausesValidation="false" EnableEmbeddedSkins="false"
+                    Skin="Test">
+                </WebCtlIpsmarx:RadTabStrip>
+            </div>
+            <!-- End Navigation -->
+            <div id="rightnavigation">
+            </div>
+            <!-- Begin Top header -->
+            <div id="bodycontent">
+                <div>
+                </div>
+                <div id="mainNav">
+                </div>
+                <asp:ContentPlaceHolder ID="cphMain" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <!-- End Right Column -->
+            <!-- Begin Footer -->
+            <div id="footer">
+                © 2009 MyCompany | Terms of Service | Privacy Policy
+            </div>
+            <!-- End Footer -->
+        </div>
+        <!-- End Wrapper -->
+</body>
+<WebCtlIpsmarx:RadWindow ID="radwinLogin" runat="server" Height="240px" Modal="True"
+    OpenerElementID="lblLogin" NavigateUrl="DefaultL.aspx" Width="464px" ReloadOnShow="True"
+    ShowContentDuringLoad="False" Skin="Sunset" OnClientClose="OnClientclose" BorderStyle="Inset"
+    KeepInScreenBounds="True" Behavior="Default" InitialBehavior="None" Left="" meta:resourcekey="radwinLoginResource1"
+    Top="">
+</WebCtlIpsmarx:RadWindow>
+<WebCtlIpsmarx:RadWindow ID="radwinRates" runat="server" Height="440px" Modal="True"
+    NavigateUrl="SD_Rates.aspx" Width="520px" ReloadOnShow="True" ShowContentDuringLoad="False"
+    Skin="Sunset" OnClientClose="OnClientclose" BorderStyle="Inset" KeepInScreenBounds="True"
+    Behavior="Default" InitialBehavior="None" Left="" meta:resourcekey="radwinRatesResource1"
+    Top="">
+</WebCtlIpsmarx:RadWindow>
+</url:form>
+<div style="display: none">
+</div>
+</body>
+</html>

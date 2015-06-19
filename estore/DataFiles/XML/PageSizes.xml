@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<PageSizes>
+
+
+  <PageSize>
+    <Size>10</Size>
+  </PageSize>
+  <PageSize>
+    <Size>20</Size>
+  </PageSize>
+  <PageSize>
+    <Size>50</Size>
+  </PageSize>
+  <PageSize>
+    <Size>100</Size>
+  </PageSize>
+
+
+</PageSizes>
+  
+  
+  

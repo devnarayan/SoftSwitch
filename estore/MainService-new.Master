@@ -1,0 +1,264 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MainService.Master.cs"
+    Inherits="CCEstore.MainService" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="ajaxToolkit" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<%@ Register TagPrefix="cc" TagName="langBar" Src="wucLanguageBar.ascx" %>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head id="Head1" runat="server">
+    <meta http-equiv="Page-Enter" content="blendTrans(Duration=0)">
+    <meta http-equiv="Page-Exit" content="blendTrans(Duration=0)">
+<meta http-equiv="X-UA-Compatible" content="IE=7" />
+    <title>Estore</title>
+
+    <script src="./javaScript/yahoo_2.0.0-b3.js"></script>
+
+    <script src="./javaScript/event_2.0.0-b3.js"></script>
+
+    <script src="./javaScript/dom_2.0.2-b3.js"></script>
+
+    <script src="./javaScript/dragdrop_2.0.0-b3.js"></script>
+
+    <link href="../css/moz-antialias.css" rel="stylesheet" type="text/css">
+    <link href="../css/RoundedCornerFF.css" rel="stylesheet" type="text/css">
+    <link href="../css/CCEstore.css" rel="stylesheet" type="text/css">
+    <link href="../css/MainServiceMaster.css" rel="stylesheet" type="text/css">
+    <link href="~/css/moz-antialias.css" rel="stylesheet" type="text/css">
+    <link href="~/css/RoundedCornerFF.css" rel="stylesheet" type="text/css">
+    <link href="~/css/CCEstore.css" rel="stylesheet" type="text/css">
+    <link href="~/css/MainServiceMaster.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+    <link href="css/font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" language="javascript">
+        //Drag and Drop FX
+        function initDragDrop() {
+            var z = 100;
+            var zTop = function() { z += 1; this.getEl().style.zIndex = z; };
+            var aModule = YAHOO.util.Dom.getElementsByClassName('module', 'div');
+            for (var i = 0; i < aModule.length; i++) {
+                var dnd = new YAHOO.util.DD(aModule[i].id);
+                dnd.onMouseDown = zTop;
+            }
+        }
+        YAHOO.util.Event.addListener(window, 'load', initDragDrop);
+        //Drag and Drop FX 
+
+    </script>
+
+    <script type="text/javascript" language="javascript">
+        var submitted = 0;
+        function check_double_click(form) {
+            if (submitted == 1) {
+                alert("Please wait for transaction to be completed.");
+                return false;
+            }
+            submitted = 1;
+            return true;
+        }
+        
+  
+        
+
+    </script>
+
+<style type="text/css">
+    .RadTabStrip .rtsTxt
+     {
+        white-space:normal !important;
+        padding-left: 0px !important;
+        text-align: left !important;
+     }
+</style>
+
+</head>
+<body>
+
+    <script type="text/javascript" language="javascript">
+        function rtsMainSelected(sender, args) {
+            var selectedtab = args.get_tab().get_text();
+            var rtsMain = $find("<%=rtsMain.ClientID%>");
+
+            try {
+                if (selectedtab == "<%= textTab %>") {
+
+                    var t = '<%= Session["CustomerID"] %>';
+
+                    if (t == null || t == "") {
+                        args.set_cancel(true);
+                    }
+                    else {
+                        return;
+                    }
+                    var win = $find("<%= radwinLogin.ClientID %>");
+                    if (win != null) win.show();
+
+                    tab = rtsMain.findTabByValue("990");
+                    tab.unselect();
+                    return;
+                }
+            }
+            catch (er)
+            { }
+
+            return;
+
+
+
+        }
+
+
+        function OnClientclose(radWindow) {
+
+            if (radWindow.argument == "Register")
+                window.location = "services.aspx";
+            else if (radWindow.argument == "CardLoggedIn")
+                window.location = "CD_CardDetail.aspx";
+            else if (radWindow.argument == "CustomerLoggedIn")
+                window.location = "SD_AccountSummary.aspx";
+            else {
+                var rtsMain = $find("<%=rtsMain.ClientID%>");
+
+                //var tab = rtsMain.findTabByText("Account");
+                var tab = rtsMain.findTabByValue("200");
+                tab.unselect();
+            }
+        }
+
+
+        function rwSelect_OnClientclose(radWindow) {
+            if (radWindow.argument != null)
+                window.location = "RegisterHS.aspx?" + radWindow.argument;
+        } 
+        
+         
+    </script>
+
+    <form id="form1" runat="server">
+    <WebCtlIpsmarx:RadScriptManager ID="sm1" runat="server" EnableTheming="True">
+    </WebCtlIpsmarx:RadScriptManager>
+        
+   <div id="wrapper">
+    <div id="headernav">
+    <div id="toptag">                    <asp:Label ID="lblWelcome" runat="server" Font-Bold="True" meta:resourcekey="lblWelcomeResource1"></asp:Label>
+                    <asp:LinkButton ID="lbLogOut" runat="server" 
+            OnClick="lbLogOut_Click" meta:resourcekey="lbLogOutResource1" 
+            CausesValidation="False"></asp:LinkButton>	 </div>
+     <div id="topnav">
+        <cc:langBar id="langBar1" runat="server"/>
+ 
+			   
+	  </div>
+    
+    </div>
+         <!-- Begin Header -->
+         <div id="header">
+		 
+<div class="logo">
+            <img src="<%= Page.ResolveUrl("~")%>images/logo.gif" />
+                </div>		 
+			   
+		 </div>
+		 <!-- End Header -->
+		 
+		 <!-- Begin Navigation -->
+         <div id="leftnavigation"></div>
+         <div id="navigation">
+			<WebCtlIpsmarx:RadTabStrip ID="rtsMain" runat="server" OnClientTabSelected="rtsMainSelected"
+				 ClickSelectedTab="True" ReorderTabsOnSelect="True" OnClientTabSelecting="rtsMainSelected" 
+				BorderStyle="None" meta:resourcekey="rtsMainResource1" EnableEmbeddedSkins=false skin="Test">
+			</WebCtlIpsmarx:RadTabStrip>		 
+		 </div>
+         	 <!-- End Navigation -->
+             
+		 <div id="rightnavigation"></div>
+		 <!-- Begin Top header -->
+          
+		  
+           <div id="bodycontent">
+               <div id="selectedService" runat="server">
+                    <WebCtlIpsmarx:RadComboBox runat="server" ID="ddlServices" Width="200px"
+                                OnSelectedIndexChanged="ddlServices_SelectedIndexChanged" AutoPostBack="True" meta:resourcekey="ddlServicesResource1">
+                    </WebCtlIpsmarx:RadComboBox>
+                </div>
+            <div id="divmsg" runat="server">
+                        <div class="content">
+                            <asp:DataList ID="dlsMessages" runat="server" RepeatColumns="1" RepeatDirection="Horizontal" style="table-layout:fixed"
+                                                    Width="100%">
+                                <ItemTemplate>
+                                    <table width="100%" cellpadding="0" cellspacing="0">
+                                        <tr>
+                                            <td style="text-transform: capitalize; color: white; background-color: gray">
+                                                <asp:Label ID="lblValue" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"Subject") %>'
+                                                    Font-Bold="True" Font-Size="9pt"></asp:Label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td style="text-transform: capitalize; color: white; background-color: gray">
+                                                <asp:Label ID="Label2" runat="server" Text='<%# DataBinder.Eval(Container.DataItem,"Message") %>'
+                                                    Visible="True"  Font-Size="9pt"></asp:Label>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                        <td align="right">
+                                            <asp:LinkButton ID="btnRemove" runat="server" Text="Remove" OnClick="btnRemove_Click" CommandArgument='<%# DataBinder.Eval(Container.DataItem,"MessageID").ToString() + "-" + DataBinder.Eval(Container.DataItem,"Type").ToString() %>'></asp:LinkButton>
+                                           </td>
+                                        </tr>
+                                    </table>
+                                </ItemTemplate>
+                            </asp:DataList>
+                        </div>
+                </div>
+<div id="accountleftnav">
+				 <div id="accountnavigation">
+					<div id="accountnavheader">Navigation</div>
+				    <div id="accountnavmiddle"><!-- 2012.08.18  David Y D-01409 -->                
+									<WebCtlIpsmarx:RadTabStrip ID="rtsSub" runat="server" BackColor="Transparent" Font-Bold="True"
+                        EnableEmbeddedSkins=false 
+                        Width="180px" meta:resourcekey="rtsSubResource1" OnTabClick="rtsSub_TabClick"  CausesValidation="false"
+                         AutoPostBack="true" > 
+                    </WebCtlIpsmarx:RadTabStrip>			
+					</div>
+					<div id="accountnavbottom">
+					</div>
+					</div>
+				</div>		   
+<div id="accountrightnav">
+            <div id="accounttop1"></div>
+            <div id="accounttopheader"></div>
+            <div id="accounttopbody">
+            	<asp:ContentPlaceHolder ID="cphMain" runat="server">
+            	</asp:ContentPlaceHolder>
+			</div>
+            <div id="accountfooter"></div>
+            </div>
+            
+            </div>                
+
+        <div>
+
+		</div>
+            
+
+           <!-- End Right Column -->
+           <!-- Begin Footer -->
+<div id="footer">
+		  � 2009 My Company  | Terms of Service | Privacy Policy     
+			
+			    
+	     </div>
+		 <!-- End Footer -->
+		 
+</div>
+   <!-- End Wrapper -->
+   
+            <WebCtlIpsmarx:RadWindow ID="radwinLogin" runat="server" Height="240px" Modal="True"
+                NavigateUrl="DefaultL.aspx" Width="464px" ReloadOnShow="True" ShowContentDuringLoad="False"
+                Skin="Black" OnClientClose="OnClientclose" BorderStyle="Inset" KeepInScreenBounds="True" Behavior="Default" InitialBehavior="None" Left="" meta:resourcekey="radwinLoginResource1" Top="">
+            </WebCtlIpsmarx:RadWindow>
+            <WebCtlIpsmarx:RadWindow ID="rwSelect" runat="server" Height="289px" Modal="True"
+                ShowContentDuringLoad="False" KeepInScreenBounds="True" NavigateUrl="SelectServices.aspx"
+                Width="396px" OnClientClose="rwSelect_OnClientclose" Skin="Sunset" Behavior="Default" InitialBehavior="None" Left="" meta:resourcekey="rwSelectResource1" Top="">
+            </WebCtlIpsmarx:RadWindow>
+    </form>
+</body>
+</html>

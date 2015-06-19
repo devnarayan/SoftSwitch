@@ -1,0 +1,173 @@
+body
+{
+	left: 0px;
+	top: 0px;
+
+	/* width: 0px;
+	position: relative;
+	height: 0px;	
+	*/
+	
+	/*background-color: #FFFFFF;	*/
+}
+
+.Button
+{
+	width: 80px;
+	FONT-FAMILY: Verdana, Arial, Helvetica, sans-serif;
+	height:21px;
+    BORDER-RIGHT: #808080 1px solid;
+    font-size:			8pt;
+    BORDER-TOP: #808080 1px solid;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(GradientType=0, StartColorStr='#C0C9D7', EndColorStr='#E7EBF0');
+    BORDER-LEFT: #808080 1px solid;
+    BORDER-BOTTOM: #808080 1px solid;
+        BACKGROUND-COLOR: #e7ebf0
+}
+
+
+.NotEditable
+{
+	font-size:			8pt;
+	font-family:		Verdana;
+	
+
+	
+	height:				19px;
+	border:				1px solid #7b9ebd;
+	background-color: Transparent;
+}
+
+
+
+.subtitle
+{
+	font-weight: bold;
+	text-align:left;
+	height: 25px;
+	padding: 0px 10px 0px 10px;
+}
+
+.heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #C0C000;
+	text-align : left;
+}
+.font {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+}
+.error {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: red;
+}
+.fontnormal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align:left;
+	color: #333333;
+	height:20px;}
+
+.fontStrong {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align:left;
+	color: #333333;
+	height:20px;
+	font-weight :bold;
+	
+	}
+
+
+
+.whitefont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+.yellowfont {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	color: #ffb900;
+}
+
+.whitefontlarge {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	font-weight: normal;
+	color: #FFFFFF;
+}
+
+.textbox
+{
+	font-size:			8pt;
+	font-family:		Verdana;
+	border:				1px solid gray;
+	background-color:White;
+}
+.table {
+	padding: 2px 4px 2px 4px;
+	border: 1px solid #660000;
+}
+
+.Button1
+{
+	border-right: black 0px solid;
+	border-top: black 0px solid;
+	font-size: 8pt;
+	font-weight:lighter;
+	cursor: hand;
+	border-left: black 0px solid;
+	color: white;
+	border-bottom: black 0px solid;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	width: 110px;
+	height: 29px;
+	background: url('../images/bg_button.png') no-repeat;
+}
+
+.price_text {font-size:9pt;color:#669933;}
+
+.price_text_bold {font-size:10pt;font-weight:bold;color:#669933;}
+
+.gridCellAlt {font-family:arial,helvetica; font-size:9pt; background-color:#F5F5F5; padding: 5px;}
+
+.upsell_background {background-color:#dcdcdc;}
+
+.discount_price_text {font-size:9pt;color:#cc6600;}
+.discount_price_text_bold {font-size:10pt;font-weight:bold;color:#cc6600;}
+.discount_price_text_detail {font-size:8pt;font-weight:bold;color:#cc6600;}
+.discount_text {font-size:9pt;color:#cc6600;}
+
+
+
+.para {font-family:arial,helvetica;font-size:9pt;}
+.section_header_row_ecomm {background-color:#aaaaaa; height:25px}
+.section_header_text_ecomm {font-family:arial,helvetica; font-size:9pt; color:white; font-weight:bold;}
+.section_header_cell_ecomm {padding:0px 0px 0px 10px; line-height:14px; vertical-align:middle;}
+
+.bold_regular_text {font-size:9pt;font-weight:bold;color:#000000;}
+
+.vSep {}
+.vSepV {border-left:1px solid #EEEEEE;padding-left:5px}
+
+.pricing_discount_desc {color:#cc6600;background-color:White;padding-left:1px;padding-right:1px;font-family:arial,helvetica;font-size:11px;}
+
+.pricing_discount_price {color:#cc6600;background-color:White;padding-left:1px;padding-right:1px;font-family:arial,helvetica;font-size:11px;}
+
+.pricing_sale_desc {background-color:White;padding-left:1px;padding-right:1px;font-family:arial,helvetica;font-size:11px;color:#669933;font-weight:bold;}
+
+.pricing_sale_price {font-family:arial,helvetica;background-color:White;font-size:16px;font-weight:bold;padding-left:1px;padding-right:1px;color:#669933;}
+
+.pricing_retail_price {background-color:White;padding-left:1px;padding-right:1px;font-family:arial,helvetica;font-size:11px;}
+
+.pricing_dotdotdot {background-image:url(../images/pricing_dot.gif);background-repeat:repeat-x;background-position:bottom;}
+
+
+.pricing_retail_desc {background-color:White;padding-left:1px;padding-right:1px;font-family:arial,helvetica;font-size:11px;}.

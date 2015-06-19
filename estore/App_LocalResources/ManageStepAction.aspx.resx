@@ -1,0 +1,1125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnApplyAllChangesResource1.Text" xml:space="preserve">
+    <value>Apply All Changes</value>
+  </data>
+  <data name="btnApplyAllChangesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnCancelResource1.Text" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="btnCancelResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDownResource1.Text" xml:space="preserve">
+    <value>Down</value>
+  </data>
+  <data name="btnDownResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnUpResource1.Text" xml:space="preserve">
+    <value>Up</value>
+  </data>
+  <data name="btnUpResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.ConfirmText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.ConfirmTitle" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.DataTextFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="GridButtonColumnResource1.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.ImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="GridButtonColumnResource1.Text" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="Label0Resource1.Text" xml:space="preserve">
+    <value>Keypad 0</value>
+  </data>
+  <data name="Label0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label10Resource1.Text" xml:space="preserve">
+    <value>Sub Action Information</value>
+  </data>
+  <data name="Label10Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Keypad 1</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label2Resource1.Text" xml:space="preserve">
+    <value>Keypad 2</value>
+  </data>
+  <data name="Label2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label3Resource1.Text" xml:space="preserve">
+    <value>Keypad 3</value>
+  </data>
+  <data name="Label3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label4Resource1.Text" xml:space="preserve">
+    <value>Keypad 4</value>
+  </data>
+  <data name="Label4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label5Resource1.Text" xml:space="preserve">
+    <value>Keypad 5</value>
+  </data>
+  <data name="Label5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label6Resource1.Text" xml:space="preserve">
+    <value>Keypad 6</value>
+  </data>
+  <data name="Label6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label7Resource1.Text" xml:space="preserve">
+    <value>Keypad 7</value>
+  </data>
+  <data name="Label7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label8Resource1.Text" xml:space="preserve">
+    <value>Keypad 8</value>
+  </data>
+  <data name="Label8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label9Resource1.Text" xml:space="preserve">
+    <value>Keypad 9</value>
+  </data>
+  <data name="Label9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblAddSequenceResource1.Text" xml:space="preserve">
+    <value>Add Sequence After Step (*)</value>
+  </data>
+  <data name="lblAddSequenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblDefineScheduleResource1.Text" xml:space="preserve">
+    <value>Define Steps For Call Flow</value>
+  </data>
+  <data name="lblDefineScheduleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblEditStepResource1.Text" xml:space="preserve">
+    <value>Edit Step</value>
+  </data>
+  <data name="lblEditStepResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad0SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad0SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad1SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad1SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad2SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad2SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad3SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad3SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad4SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad4SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad5SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad5SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad6SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad6SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad7SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad7SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad8SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad8SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad9SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblKeypad9SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMenuResource1.Text" xml:space="preserve">
+    <value>Menu</value>
+  </data>
+  <data name="lblMenuResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMoveExistingSequenceResource1.Text" xml:space="preserve">
+    <value>Move Existing Sequence</value>
+  </data>
+  <data name="lblMoveExistingSequenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblMoveSequenceResource1.Text" xml:space="preserve">
+    <value>Move Sequence After Step</value>
+  </data>
+  <data name="lblMoveSequenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSchedulesResource1.Text" xml:space="preserve">
+    <value>Schedules</value>
+  </data>
+  <data name="lblSchedulesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSelectStepResource1.Text" xml:space="preserve">
+    <value>Select Step Action (*)</value>
+  </data>
+  <data name="lblSelectStepResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStepInfoResource1.Text" xml:space="preserve">
+    <value>Action Information</value>
+  </data>
+  <data name="lblStepInfoResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStepNameResource1.Text" xml:space="preserve">
+    <value>Step Name (*)</value>
+  </data>
+  <data name="lblStepNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblStepSubActionResource1.Text" xml:space="preserve">
+    <value>Events Action Information</value>
+  </data>
+  <data name="lblStepSubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubAction1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubAction1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubAction2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubAction2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubAction3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubAction3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubAction4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubAction4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubActionValue1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubActionValue1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubActionValue2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubActionValue2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubActionValue3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubActionValue3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubActionValue4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblSubActionValue4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblTitleResource1.Text" xml:space="preserve">
+    <value>Manage Step Action</value>
+  </data>
+  <data name="lblTitleResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbSequenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="PageResource1.Title" xml:space="preserve">
+    <value>Estore</value>
+  </data>
+  <data name="pnlAddStepResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlAddStepResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlKeypadResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlKeypadResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlMoveSequenceResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlMoveSequenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSubActionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlSubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Text" xml:space="preserve">
+    <value>Please Select</value>
+  </data>
+  <data name="RadComboBoxItemResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource2.Text" xml:space="preserve">
+    <value>Add New Step</value>
+  </data>
+  <data name="RadComboBoxItemResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource2.Value" xml:space="preserve">
+    <value>Add</value>
+  </data>
+  <data name="RadComboBoxItemResource3.Text" xml:space="preserve">
+    <value>Update Existing Step</value>
+  </data>
+  <data name="RadComboBoxItemResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource3.Value" xml:space="preserve">
+    <value>Update</value>
+  </data>
+  <data name="RadComboBoxItemResource4.Text" xml:space="preserve">
+    <value>Delete Existing Step</value>
+  </data>
+  <data name="RadComboBoxItemResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource4.Value" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="RadComboBoxItemResource5.Text" xml:space="preserve">
+    <value>Move Existing Step</value>
+  </data>
+  <data name="RadComboBoxItemResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource5.Value" xml:space="preserve">
+    <value>Move</value>
+  </data>
+  <data name="rcbAddSequenceResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbAddSequenceResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbAddSequenceResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbEditStepResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbEditStepResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbEditStepResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad0Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad0Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad0Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad0SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad0SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad0SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad1Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad1Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad1SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad1SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad1SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad2Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad2Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad2SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad2SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad2SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad3Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad3Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad3SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad3SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad3SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad4Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad4Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad4SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad4SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad4SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad5Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad5Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad5Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad5SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad5SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad5SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad6Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad6Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad6Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad6SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad6SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad6SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad7Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad7Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad7Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad7SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad7SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad7SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad8Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad8Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad8Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad8SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad8SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad8SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad9Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad9Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad9Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad9SubActionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbKeypad9SubActionResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbKeypad9SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbMenuResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbMenuResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbMenuResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSchedulesResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSchedulesResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSchedulesResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSelectStepResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSelectStepResource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSelectStepResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubAction1Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubAction1Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSubAction1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubAction2Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubAction2Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSubAction2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubAction3Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubAction3Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSubAction3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubAction4Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubAction4Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSubAction4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubActionValue1Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubActionValue1Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSubActionValue1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubActionValue2Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubActionValue2Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSubActionValue2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubActionValue3Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubActionValue3Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSubActionValue3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubActionValue4Resource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rcbSubActionValue4Resource1.LoadingMessage" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rcbSubActionValue4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.BackImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.ClientSettings.ClientMessages.DragToGroupOrReorder" xml:space="preserve">
+    <value>Drag to group or reorder</value>
+  </data>
+  <data name="rgStepActionsResource1.ClientSettings.ClientMessages.DragToResize" xml:space="preserve">
+    <value>Drag to resize</value>
+  </data>
+  <data name="rgStepActionsResource1.ClientSettings.ClientMessages.DropHereToReorder" xml:space="preserve">
+    <value>Drop here to reorder</value>
+  </data>
+  <data name="rgStepActionsResource1.ClientSettings.ClientMessages.PagerTooltipFormatString" xml:space="preserve">
+    <value>Page: &lt;b&gt;{0}&lt;/b&gt; out of &lt;b&gt;{1}&lt;/b&gt; pages</value>
+  </data>
+  <data name="rgStepActionsResource1.FilterMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.GroupingSettings.CollapseTooltip" xml:space="preserve">
+    <value>Collapse group</value>
+  </data>
+  <data name="rgStepActionsResource1.GroupingSettings.ExpandTooltip" xml:space="preserve">
+    <value>Expand group</value>
+  </data>
+  <data name="rgStepActionsResource1.GroupingSettings.GroupByFieldsSeparator" xml:space="preserve">
+    <value>; </value>
+  </data>
+  <data name="rgStepActionsResource1.GroupingSettings.GroupContinuedFormatString" xml:space="preserve">
+    <value>... group continued from the previous page. </value>
+  </data>
+  <data name="rgStepActionsResource1.GroupingSettings.GroupContinuesFormatString" xml:space="preserve">
+    <value> Group continues on the next page.</value>
+  </data>
+  <data name="rgStepActionsResource1.GroupingSettings.GroupSplitDisplayFormat" xml:space="preserve">
+    <value>Showing {0} of {1} items.</value>
+  </data>
+  <data name="rgStepActionsResource1.GroupingSettings.GroupSplitFormat" xml:space="preserve">
+    <value> ({0})</value>
+  </data>
+  <data name="rgStepActionsResource1.GroupingSettings.UnGroupTooltip" xml:space="preserve">
+    <value>Drag out of the bar to ungroup</value>
+  </data>
+  <data name="rgStepActionsResource1.GroupPanel.Text" xml:space="preserve">
+    <value>Drag a column header and drop it here to group by that column</value>
+  </data>
+  <data name="rgStepActionsResource1.GroupPanel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.HeaderContextMenu.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.HierarchySettings.CollapseTooltip" xml:space="preserve">
+    <value>Collapse</value>
+  </data>
+  <data name="rgStepActionsResource1.HierarchySettings.ExpandTooltip" xml:space="preserve">
+    <value>Expand</value>
+  </data>
+  <data name="rgStepActionsResource1.HierarchySettings.SelfCollapseTooltip" xml:space="preserve">
+    <value>Self reference collapse</value>
+  </data>
+  <data name="rgStepActionsResource1.HierarchySettings.SelfExpandTooltip" xml:space="preserve">
+    <value>Self reference expand</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.Caption" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.CommandItemSettings.AddNewRecordImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.CommandItemSettings.AddNewRecordText" xml:space="preserve">
+    <value>Add new record</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.CommandItemSettings.RefreshImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.CommandItemSettings.RefreshText" xml:space="preserve">
+    <value>Refresh</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.EditFormSettings.CaptionFormatString" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.CollapseImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.ExpandImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ExpandCollapseColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.FilterExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.NoDetailRecordsText" xml:space="preserve">
+    <value>No child records to display.</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.NoMasterRecordsText" xml:space="preserve">
+    <value>No records to display.</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Next Pages</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.PagerStyle.NextPageText" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Change page: {4} &amp;nbsp;Displaying page {0} of {1}, items {2} to {3} of {5}.</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Previous Pages</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.PagerStyle.PrevPageText" xml:space="preserve">
+    <value>Previous</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.CurrentFilterValue" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.EditFormHeaderTextFormat" xml:space="preserve">
+    <value>{0}:</value>
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.FooterText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.GroupByExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.HeaderAbbr" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.HeaderAxis" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.HeaderImageUrl" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.HeaderText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.HeaderTooltip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.RowIndicatorColumn.SortExpression" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.Summary" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.MasterTableView.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.PagerStyle.NextPagesToolTip" xml:space="preserve">
+    <value>Next Pages</value>
+  </data>
+  <data name="rgStepActionsResource1.PagerStyle.NextPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.PagerStyle.NextPageToolTip" xml:space="preserve">
+    <value>Next Page</value>
+  </data>
+  <data name="rgStepActionsResource1.PagerStyle.PagerTextFormat" xml:space="preserve">
+    <value>Change page: {4} &amp;nbsp;Displaying page {0} of {1}, items {2} to {3} of {5}.</value>
+  </data>
+  <data name="rgStepActionsResource1.PagerStyle.PrevPagesToolTip" xml:space="preserve">
+    <value>Previous Pages</value>
+  </data>
+  <data name="rgStepActionsResource1.PagerStyle.PrevPageText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="rgStepActionsResource1.PagerStyle.PrevPageToolTip" xml:space="preserve">
+    <value>Previous Page</value>
+  </data>
+  <data name="rgStepActionsResource1.SortingSettings.SortedAscToolTip" xml:space="preserve">
+    <value>Sorted asc</value>
+  </data>
+  <data name="rgStepActionsResource1.SortingSettings.SortedDescToolTip" xml:space="preserve">
+    <value>Sorted desc</value>
+  </data>
+  <data name="rgStepActionsResource1.SortingSettings.SortToolTip" xml:space="preserve">
+    <value>Click here to sort</value>
+  </data>
+  <data name="rgStepActionsResource1.StatusBarSettings.LoadingText" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="rgStepActionsResource1.StatusBarSettings.ReadyText" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="rgStepActionsResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad0SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad0SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad1SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad1SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad2SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad2SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad3SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad3SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad4SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad4SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad5SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad5SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad6SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad6SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad7SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad7SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad8SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad8SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad9SubActionResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtKeypad9SubActionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStepNameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtStepNameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubActionValue1Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubActionValue1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubActionValue2Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubActionValue2Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubActionValue3Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubActionValue3Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubActionValue4Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSubActionValue4Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+</root>

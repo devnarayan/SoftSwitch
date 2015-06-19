@@ -1,0 +1,113 @@
+
+div.module
+{
+	position:relative;
+    z-index:1;
+	}
+
+
+
+
+div.container
+{
+	width:100%;
+	font-family:Verdana;
+	font-size:0.75em;	
+	background:#666666;
+	-moz-border-radius:1em 1em;
+	border-radius:1em 1em;
+	border-right:solid 2px #cccccc;
+	border-bottom:solid 2px #cccccc;
+	margin:0 0 6px 0;	
+}
+
+
+
+div.container div.content
+{	
+	padding:16px;
+	background:white;
+	-moz-border-radius:12px;
+	
+	position:relative;
+	top:-2px;
+	left:-2px;
+	
+	border-style:solid;
+    border-width:1px;
+    border-color:#336699;
+}
+
+/*IE only rules*/
+div.container
+{
+	*margin:0 0 -3px 0;
+}
+
+/* 2009.4.28 StevenY */
+/* this one cause some problem */
+div.container v\:roundrect
+{
+	behavior:url(#default#VML);
+	zoom:1;	
+	*display:block;
+	*width:100%;	
+	*position:relative;	
+
+}
+
+
+div.container
+{
+	filter:alpha(opacity:60) progid:DXImageTransform.Microsoft.Blur(pixelradius=4);
+}
+
+div.container div.content
+{
+	*position:relative;
+	*border-width:0;
+	*background:transparent;
+}
+
+
+
+H1 {
+	FONT-FAMILY: georgia
+}
+H2 {
+	FONT-FAMILY: georgia
+}
+H3 {
+	FONT-FAMILY: georgia
+}
+H2 {
+	COLOR: #ff0066
+}
+H3 {
+	COLOR: #99cc00
+}
+EM {
+	FONT-SIZE: 0.5em; COLOR: #666666
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana
+}
+INPUT {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; RIGHT: 0px;  LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: absolute; TOP: 0px
+}
+.main {
+	MARGIN: 4em 2em
+}
+XMP {
+	COLOR: #3366ff; LINE-HEIGHT: 1.2; FONT-FAMILY: Verdana
+}
+A {
+	FONT-FAMILY: Verdana;
+	
+}

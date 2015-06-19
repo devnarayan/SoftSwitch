@@ -1,0 +1,60 @@
+DIV.module {
+	Z-INDEX: 1; POSITION: relative
+}
+DIV.container {
+	BORDER-RIGHT: #cccccc 2px solid; FONT-SIZE: 0.75em; BACKGROUND: #666666; MARGIN: 0px 0px 6px; WIDTH: 800px; BORDER-BOTTOM: #cccccc 2px solid; FONT-FAMILY: Verdana; -moz-border-radius: 12px; border-radius: 12px
+}
+DIV.container DIV.content {
+	BORDER-RIGHT: #336699 1px solid; PADDING-RIGHT: 16px; BORDER-TOP: #336699 1px solid; PADDING-LEFT: 16px; BACKGROUND: white; LEFT: -2px; PADDING-BOTTOM: 16px; BORDER-LEFT: #336699 1px solid; PADDING-TOP: 16px; BORDER-BOTTOM: #336699 1px solid; POSITION: relative; TOP: -2px; -moz-border-radius: 12px
+}
+DIV.container {
+	MARGIN: 0px 0px -3px
+}
+DIV.container v\:roundrect {
+	DISPLAY: block; BEHAVIOR: url(#default#VML); WIDTH: 100%; ZOOM: 1; POSITION: relative
+}
+DIV.container {
+	FILTER: alpha(opacity:60) progid:DXImageTransform.Microsoft.Blur(pixelradius=4)
+}
+DIV.container DIV.content {
+	BORDER-TOP-WIDTH: 0px; BORDER-LEFT-WIDTH: 0px; BACKGROUND: none transparent scroll repeat 0% 0%; BORDER-BOTTOM-WIDTH: 0px; POSITION: relative; BORDER-RIGHT-WIDTH: 0px
+}
+H1 {
+	FONT-FAMILY: georgia
+}
+H2 {
+	FONT-FAMILY: georgia
+}
+H3 {
+	FONT-FAMILY: georgia
+}
+H2 {
+	COLOR: #ff0066
+}
+H3 {
+	COLOR: #99cc00
+}
+EM {
+	FONT-SIZE: 0.5em; COLOR: #666666
+}
+SELECT {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana
+}
+INPUT {
+	FONT-SIZE: 12px; FONT-FAMILY: Verdana
+}
+BODY {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px
+}
+FORM {
+	PADDING-RIGHT: 0px; PADDING-LEFT: 0px; RIGHT: 0px;  LEFT: 0px; PADDING-BOTTOM: 0px; MARGIN: 0px; PADDING-TOP: 0px; POSITION: absolute; TOP: 0px
+}
+.main {
+	MARGIN: 4em 2em
+}
+XMP {
+	COLOR: #3366ff; LINE-HEIGHT: 1.2; FONT-FAMILY: Verdana
+}
+A {
+	FONT-FAMILY: Verdana
+}

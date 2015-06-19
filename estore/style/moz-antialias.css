@@ -1,0 +1,24 @@
+DIV.module .canvas-corner {
+	FONT-SIZE: 0px; OVERFLOW: hidden; WIDTH: 30px; POSITION: absolute; HEIGHT: 30px
+}
+DIV.module .canvas-corner .cvs {
+	POSITION: absolute; opacity: 0.7
+}
+DIV.module .canvas-corner-0 {
+	LEFT: -2px; TOP: -2px
+}
+DIV.module .canvas-corner-1 {
+	RIGHT: -3px; TOP: -3px
+}
+DIV.module .canvas-corner-2 {
+	RIGHT: -3px; BOTTOM: 1px
+}
+DIV.module .canvas-corner-3 {
+	LEFT: -2px; BOTTOM: 2px
+}
+DIV.module-has-canvas-shadow DIV.container {
+	BORDER-TOP-STYLE: none; BORDER-RIGHT-STYLE: none; BORDER-LEFT-STYLE: none; BORDER-BOTTOM-STYLE: none
+}
+DIV.module-has-canvas-shadow .shadow-patch {
+	WIDTH: 100%; POSITION: absolute; HEIGHT: 100%; -moz-border-radius: 12px; border-radius: 12px
+}

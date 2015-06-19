@@ -1,0 +1,71 @@
+﻿
+#wrapper {
+ /* width: 1000px; 
+  margin: 0 auto; 
+  text-align: left; 
+  background:url('../images/bg.jpg'); */
+  /* hidden to integrate with new design */
+}
+#branding {
+  height: 100px;
+  width:1000px;
+  /* background: url(images/logo.gif) gray no-repeat ; */
+    
+}
+
+#loginInfo{
+
+	background:white;
+    float:right;
+    position:relative;
+    bottom:15px;
+    
+
+}
+
+#mainNav{
+  padding: 0px;
+}
+
+#content { 
+  width: 800px;
+  float: left; 
+  /* background:gray; */
+  padding-top:10px;
+
+}
+
+#AD { 
+  /*  background:yellow;   */
+  width: 180px; 
+  float: right; 
+} 
+
+#footer { 
+  clear: both; 
+} 
+
+
+#AD {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#AD * {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+#AD * * {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#content * {
+  padding-right: 0px;
+}
+
+#content * * {
+    
+  padding-right: 0;
+}

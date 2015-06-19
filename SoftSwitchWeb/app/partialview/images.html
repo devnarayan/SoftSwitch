@@ -1,0 +1,32 @@
+﻿<div class="row" data-ng-init="imageInit()">
+    <div class="col-md-12">
+        <div>
+            <div class="form-group">
+                <label> Select WebPage :</label>{{$parent.WebPageList[0].WebPageID}}
+                <select class="form-control" name="ddlWebpage" data-ng-model="WebPageID" data-ng-change="ChangeWebPage()">
+                    <option data-ng-repeat="wp in $parent.WebPageList" value="{{wp.WebPageID}}">{{wp.PageName}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label> Select Content:</label>
+                <select class="select-large form-control" id="SelectPicName" data-ng-model="ContentID" data-ng-change="ChangeContent()">
+                    <option data-ng-repeat="wp in $parent.ImageList" value="{{wp.ContentImageID}}">{{wp.LangContent}}</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label>Select Pics:</label>
+                    <input class="form-control" type="file" ng-model-instant id="fileTolandingUpload" />
+            </div>
+            <div class="form-group">
+                <label>.</label>
+                <button type="submit" id="btnSave" style=" display:inline; margin-top:0px;" class="btn btn-primary" data-ng-click="UploadLandingImage()">
+                    Upload Image
+                </button>
+            </div>
+
+            <div class="form-group">
+                <img src="{{ImageURL}}" id="imgFSrc" width="300" height="200" />
+            </div>
+        </div>
+    </div>
+</div>

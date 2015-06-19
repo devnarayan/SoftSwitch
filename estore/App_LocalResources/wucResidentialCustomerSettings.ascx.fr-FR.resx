@@ -1,0 +1,432 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="btnAddFollowMeResource1.Text" xml:space="preserve">
+    <value>Ajouter</value>
+  </data>
+  <data name="btnAddFollowMeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDownResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnDownResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnRemovefollowMeResource1.Text" xml:space="preserve">
+    <value>Enlever</value>
+  </data>
+  <data name="btnRemovefollowMeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnRsApplyResource1.Text" xml:space="preserve">
+    <value>Modifier</value>
+  </data>
+  <data name="btnRsApplyResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnUPResource1.AlternateText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnUPResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlFollowMeOptionResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlFollowMeOptionResource1.LoadingMessage" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="ddlFollowMeOptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlFollowMeResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlFollowMeResource1.LoadingMessage" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="ddlFollowMeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlFollowMeStatusResource1.EmptyMessage" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ddlFollowMeStatusResource1.LoadingMessage" xml:space="preserve">
+    <value>Chargement</value>
+  </data>
+  <data name="ddlFollowMeStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label1Resource1.Text" xml:space="preserve">
+    <value>Pack résidentiel</value>
+  </data>
+  <data name="Label1Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label35Resource1.Text" xml:space="preserve">
+    <value>Login SIP</value>
+  </data>
+  <data name="Label35Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label36Resource1.Text" xml:space="preserve">
+    <value>Mot de passe</value>
+  </data>
+  <data name="Label36Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label38Resource1.Text" xml:space="preserve">
+    <value>Numéros DID attribués</value>
+  </data>
+  <data name="Label38Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label48Resource1.Text" xml:space="preserve">
+    <value>Options</value>
+  </data>
+  <data name="Label48Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label50Resource1.Text" xml:space="preserve">
+    <value>Numéro de téléphone</value>
+  </data>
+  <data name="Label50Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label51Resource1.Text" xml:space="preserve">
+    <value>Délais de reponse</value>
+  </data>
+  <data name="Label51Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label51Resource2.Text" xml:space="preserve">
+    <value>Délais de reponse</value>
+  </data>
+  <data name="Label51Resource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label80Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label80Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label83Resource1.Text" xml:space="preserve">
+    <value>PIN</value>
+  </data>
+  <data name="Label83Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label91Resource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label91Resource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblErrorResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFollowMeOptionResource1.Text" xml:space="preserve">
+    <value>Options cascade</value>
+  </data>
+  <data name="lblFollowMeOptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFollowmeResource1.Text" xml:space="preserve">
+    <value>Option des tranferts d'appels</value>
+  </data>
+  <data name="lblFollowmeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFollowMeStatusResource1.Text" xml:space="preserve">
+    <value>Etat appels en cascade</value>
+  </data>
+  <data name="lblFollowMeStatusResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lblFollowMeTimeOutResource1.Text" xml:space="preserve">
+    <value>Délais d'essaies</value>
+  </data>
+  <data name="lblFollowMeTimeOutResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbxAssignedDIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="lbxFollowMeNumbersResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlCallFwdOptionResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlCallFwdOptionResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDIDResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlDIDResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlFollowMeResource1.GroupingText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pnlFollowMeResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Text" xml:space="preserve">
+    <value>Désactivé</value>
+  </data>
+  <data name="RadComboBoxItemResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource1.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource2.Text" xml:space="preserve">
+    <value>Toujours</value>
+  </data>
+  <data name="RadComboBoxItemResource2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource2.Value" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="RadComboBoxItemResource3.Text" xml:space="preserve">
+    <value>Pas de réponse</value>
+  </data>
+  <data name="RadComboBoxItemResource3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource3.Value" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="RadComboBoxItemResource4.Text" xml:space="preserve">
+    <value>Si occuppé</value>
+  </data>
+  <data name="RadComboBoxItemResource4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource4.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource5.Text" xml:space="preserve">
+    <value>Désactivé</value>
+  </data>
+  <data name="RadComboBoxItemResource5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource5.Value" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="RadComboBoxItemResource6.Text" xml:space="preserve">
+    <value>Activé</value>
+  </data>
+  <data name="RadComboBoxItemResource6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource6.Value" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="RadComboBoxItemResource7.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource7.ToolTip" xml:space="preserve">
+    <value>Sonnerie séquentielle</value>
+  </data>
+  <data name="RadComboBoxItemResource7.Value" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="RadComboBoxItemResource8.Text" xml:space="preserve">
+    <value>Faire tout sonner</value>
+  </data>
+  <data name="RadComboBoxItemResource8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RadComboBoxItemResource8.Value" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="txtCallForwardingTimeOutResource1.Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtCallForwardingTimeOutResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFollowMePhoneResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtFollowMePhoneResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrefixSipUsernameResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtPrefixSipUsernameResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtResPINResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtResPINResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSIPLoginResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSIPLoginResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSIPPasswordResource1.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtSIPPasswordResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTimeOutResource1.Label" xml:space="preserve">
+    <value />
+  </data>
+  <data name="txtTimeOutResource1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Label100Resource1.Text" xml:space="preserve">
+    <value>Num. appels en cascade</value>
+  </data>
+  <data name="Label200Resource1.Text" xml:space="preserve">
+    <value>inclut code pays</value>
+  </data>
+  <data name="Label40Resource1.Text" xml:space="preserve">
+    <value>Messagerie email</value>
+  </data>
+  <data name="Label42Resource1.Text" xml:space="preserve">
+    <value>Duré max. de sonnerie</value>
+  </data>
+  <data name="Label43Resource1.Text" xml:space="preserve">
+    <value>Mot de passe méssagerie</value>
+  </data>
+  <data name="lbl2Resource1.Text" xml:space="preserve">
+    <value>Messagerie vocale</value>
+  </data>
+  <data name="lblVMResource1.Text" xml:space="preserve">
+    <value>Paramètre messagerie vocale</value>
+  </data>
+</root>

@@ -1,0 +1,36 @@
+.sIFR-flash {
+	VISIBILITY: visible! important; MARGIN: 0px
+}
+.sIFR-replaced {
+	VISIBILITY: visible! important
+}
+SPAN.sIFR-alternate {
+	DISPLAY: block; LEFT: 0px; OVERFLOW: hidden; WIDTH: 0px; POSITION: absolute; TOP: 0px; HEIGHT: 0px
+}
+.sIFR-hasFlash H1 {
+	FONT-SIZE: 30px; VISIBILITY: hidden; MARGIN: 0px auto; LINE-HEIGHT: 1em
+}
+.sIFR-hasFlash H2 {
+	FONT-SIZE: 20px; VISIBILITY: hidden; MARGIN: 0px auto; LINE-HEIGHT: 1em
+}
+.sIFR-hasFlash H3 {
+	FONT-SIZE: 18px; VISIBILITY: hidden; LETTER-SPACING: -6px
+}
+.sIFR-hasFlash H4 {
+	FONT-SIZE: 21px; VISIBILITY: hidden; LETTER-SPACING: -5px
+}
+.sIFR-hasFlash H5 {
+	FONT-SIZE: 14px; VISIBILITY: hidden; LETTER-SPACING: -4px
+}
+.sIFR-hasFlash H6 {
+	FONT-SIZE: 16px; VISIBILITY: hidden; LETTER-SPACING: -4px
+}
+.sIFR-hasFlash PRE {
+	FONT-SIZE: 38px; VISIBILITY: hidden; VERTICAL-ALIGN: super; LETTER-SPACING: -4px
+}
+.sIFR-hasFlash .sifrtxt {
+	FONT-SIZE: 12px; VISIBILITY: hidden; LETTER-SPACING: -5px
+}
+.sIFR-hasFlash .green {
+	FONT-SIZE: 12px; VISIBILITY: hidden; LETTER-SPACING: -5px
+}

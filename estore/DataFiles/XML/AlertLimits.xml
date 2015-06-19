@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<Alert_Limits>
+  <Limit>
+    <Amount>5</Amount>
+  </Limit>
+  <Limit>
+    <Amount>10</Amount>
+  </Limit>
+  <Limit>
+    <Amount>25</Amount>
+  </Limit>
+  <Limit>
+    <Amount>50</Amount>
+  </Limit>
+</Alert_Limits>

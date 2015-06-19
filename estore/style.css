@@ -1,0 +1,322 @@
+
+
+
+/*Border, width for the main table*/	
+.main_main{ 
+color: #ffffff; 
+font-size: 8pt; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+background-color: #ffffff; 
+margin-bottom: 3px;
+border-bottom: 1px solid #cccccc;
+border-left:1px solid #cccccc;
+border-right:1px solid #cccccc;
+border-top:1px solid #cccccc;
+padding: 2px;
+width:950px;
+}
+
+
+
+/*Background and width for the main frame */
+	
+.main { 
+color: #00ccff; 
+font-size: 8pt; 
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+background: #fff url(images/bg.jpg); 
+width:770px;
+}
+
+/*Right side backgtround */
+.main_right{ background:#dbe9ff;
+top:0;
+ padding: 5px;
+ width:160px;
+}
+
+/*Submenu and button- 7 steps */	
+	.submenu{ 
+color: #fff; 
+font-size: 9px; 
+font-family: Arial, Helvetica, sans-serif;
+background: #96a7be;
+text-transform: uppercase;
+font-weight:bold;
+height:23px;
+padding:0px;
+}
+.submenu_on{ 
+color: #fff; 
+font-size: 9px; 
+font-family: Arial, Helvetica, sans-serif;
+background: #5b84bf;
+text-transform: uppercase;
+font-weight:bold;
+height:23px;
+}
+.submenu_arrow{ 
+background: #5b84bf url(images/menu_arrow.gif) no-repeat;
+height:23px;
+width:11px;
+}
+.submenu_off{ 
+background: #96a7be url(images/menubg.gif) repeat;
+width:11px;
+}
+/* BUTTONS*/
+.buttonDefault{
+border-right: black 0px solid;
+	border-top: black 0px solid;
+	border-bottom: black 0px solid;
+	font-size: 8pt;
+	font-weight:bold;
+	cursor: hand;
+	border-left: black 0px solid;
+	color: #fff;
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	width: 110px;
+	height: 29px;
+	background:#5b84bf url('images/bg_button.gif') no-repeat;
+}
+.buttonproceed{
+border-right: black 0px solid;
+	border-top: black 0px solid;
+	border-bottom: black 0px solid;
+	font-size: 8pt;
+	font-weight:bold;
+	cursor: hand;
+	border-left: black 0px solid;
+	color: #fff;
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	width: 220px;
+	height: 29px;
+	background:#5b84bf url('images/bg_proceed.gif') no-repeat;
+}
+.buttonDefault1{
+border-right: black 0px solid;
+	border-top: black 0px solid;
+	border-bottom: black 0px solid;
+	font-size: 8pt;
+	font-weight:bold;
+	cursor: hand;
+	border-left: black 0px solid;
+	color: #5b84bf;
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	width: 110px;
+	height: 29px;
+	background:#fff url('images/but1.gif') no-repeat;
+}
+.table_buttons{
+width:100%;
+height:30px;
+background-color:#5b84bf;
+}
+
+/*top frame */
+.main_top{ 
+background: #ffffff;
+background-position:top,left;
+height:100px;
+}
+
+/*background color for inner pages */
+
+.page { color: #666666; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif;
+background: #ffffff;
+background-position:top;
+/*border-bottom:2px inset #c6c6c6;
+border-left:1px outset #f4f4f4;
+border-right:2px inset #c6c6c6;*/
+border-top:1px outset #fff;
+padding: 5px;
+}
+
+.pageblue { color: #666666; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif;
+background: #dbe9ff;
+background-position:top;
+border-bottom:2px inset #c6c6c6;
+border-left:1px outset #f4f4f4;
+border-right:2px inset #c6c6c6;
+border-top:1px outset #fff;
+padding: 5px;
+}
+
+
+.pagewhite { color: #666666; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif;
+background: #ffffff;
+background-position:top;
+border-bottom:2px inset #c6c6c6;
+border-left:1px outset #f4f4f4;
+border-right:2px inset #c6c6c6;
+border-top:1px outset #fff;
+padding: 5px;
+}
+
+
+	
+td {  
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 11px; 
+color: #000000
+
+}
+
+
+
+
+/*HOME page*/
+.style1 {color: #FF0000}
+.style2 {
+	color: #5d5d5d;
+	font-size: 10px;
+	font-weight: bold;
+}
+.style3 {
+	color: #cc6600;
+	font-size: 10px;
+	font-weight: bold;
+}
+
+
+
+/*Backgrounds*/
+.bg_blue {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align:left;
+	color: #333333;
+	background-color: #ffffff;
+	height:20px;
+}
+.bg_white {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align:left;
+	color: #333333;
+	background-color: #fff;
+	padding:5px;
+}
+
+.bg_grey {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align:left;
+	color: #333333;
+	background-color: #ebebeb;
+	padding:5px;
+}
+.bg_grey1 {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align:left;
+	color: #333333;
+	background-color: #f4f4f4;
+	padding:5px;
+}
+.bg_line {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align:left;
+	color: #333333;
+	background-color: #fff;
+}
+
+/*Fonts*/
+.heading {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000000;
+}
+.font {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #000000;
+}
+.error {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: red;
+}
+.fontnormal {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	text-align:left;
+	color: #333333;
+	height:20px;}
+
+
+/* Accets*/
+.topmenu {
+	color: #5b84bf;
+	font-size: 7pt;
+font-weight: bold;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+text-transform: uppercase;
+	padding: 0px;
+}
+
+.main_container { color: #00ccff; font-size: 8pt; font-family: Verdana, Arial, Helvetica, sans-serif; background-color: #ffffff; margin-bottom: 3px;
+ padding: 5px;
+ width:99%;
+   }
+.widht_t{
+width:85%;
+padding:5;
+}
+
+.page_cont { 
+padding: 5px;
+}
+
+.rates{ 
+background: #ffffff url(images/bg_rates.jpg) no-repeat;
+}
+.login {
+	color: #666666;
+	font-size: 7pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;	
+	text-align: left;
+	text-transform: uppercase;
+}
+
+/*FORMS*/
+.submit{
+border-right: black 0px solid;
+	border-top: black 0px solid;
+	font-size: 8pt;
+	font-weight:bold;
+	cursor: hand;
+	border-left: black 0px solid;
+	border-bottom: black 0px solid;
+	color: #fff;
+	font-size: 8pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+	width: 110px;
+	height: 29px;
+	background:#5b84bf url('images/bg_button.gif') no-repeat;
+}
+.input {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-WEIGHT: normal; FONT-SIZE: 11px; VERTICAL-ALIGN: top; BORDER-LEFT: #666666 1px solid; COLOR: #000000; BORDER-BOTTOM: #666666 1px solid; FONT-FAMILY: verdana, helvetica, arial, san-serif; HEIGHT: 17px; Horizontal-Align: Center;
+}
+.textfield {  
+font-family: Verdana, Arial, Helvetica, sans-serif; 
+font-size: 10px; 
+color: #000000; 
+background-color: #DAEAF3; 
+width: 90px; 
+height:17px
+}	

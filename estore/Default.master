@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Default.master.cs" Inherits="CCEstore.SiteMaster" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head runat="server" id="HtmlHead">
+    <title>Error Page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style type="text/css">
+        body
+        {
+            font-family: Calibri,Arial,Helvetica;
+        }
+        #content
+        {
+            margin: 70px auto;
+            width: 750px;
+        }
+        h1 {
+            background-color:#457da7;
+            color: aliceblue;
+            padding: 10px;
+            font-size: 30px;
+            text-align: center;
+        }
+        #options {
+            margin-top: 30px;
+        }
+        
+    </style>
+</head>
+<body runat="server" id="HtmlBody">
+    <form runat="server">
+    <div id="content">
+        <div>
+            <h1>
+                Oops... an unexpected event has just occurred
+            </h1>
+            <asp:ContentPlaceHolder ID="BodyContent" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="options">
+                <ul>
+                    
+                    <% string url = HttpContext.Current.Request.Url.AbsoluteUri;%>
+                      <% if (!url.Contains("Breeze") && Session["DistributorID"] == null)
+                       { %>
+                    <li>Make sure you entered the correct web address </li> 
+                    <% } %>                 
+                    <li>Close your browser and try to log back in.&nbsp;</li>
+                    <li>Please contact your service/solution provider for further assistance. </li>
+                </ul>
+            </div>
+            <br />
+            <a href='javascript:history.go(-1)'>Go Back to Previous Page</a>
+            <br />
+        </div>
+    </div>
+    </form>
+</body>
+</html>
