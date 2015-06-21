@@ -10,6 +10,7 @@ using System.Web;
     {
         bool AddHeader(HeaderModel model);
         bool EditHeader(HeaderModel model);
+    DataTable GetHeaderList();
         DataTable HeaderList();
         bool DeleteHeader(HeaderModel model);
     }
@@ -32,7 +33,12 @@ using System.Web;
         {
             return dbContext.ExecuteNonQuery("Delete HeaderContent where HeaderID='" + model.HeaderID + "'");
         }
-        public DataTable HeaderList()
+    
+    public DataTable GetHeaderList()
+    {
+        return dbContext.GetDataTable("select * from HeaderContent");
+    }
+    public DataTable HeaderList()
         {
           return   dbContext.GetDataTable("select * from HeaderContent");
         }

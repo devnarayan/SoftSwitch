@@ -7,16 +7,35 @@ myApp.controller('HeaderController', function ($http, $scope) {
     $scope.title = "Manage Header and Footer Content";
     $scope.img = "../img/iconset-addictive-flavour-set/png/screen_rulers_glossy.png";
     $scope.showTopToggle = false;
-    
-    $http({
-        method:'POST',
-        url: '../CS.aspx/GetHeaderList',
-        data: { name: 'hi' }
-    }).success(function (response) {
-        var data = $.parseJSON(response.d);
-        $scope.HeaderList1 = data;
-    })
 
+    $scope.GetHeaderInit = function () {
+        getHeader();
+    }
+    $scope.SaveNewHeader = function ()
+    {
+        $http({
+            method: 'POST',
+            url: '../CS.aspx/SaveNewHeader',
+            data: { label: $("#hdlabel").val(), content: $("#hdContent").val() }
+        }).success(function (response) {
+            var data = $.parseJSON(response.d);
+            alert(data);
+            getHeader()
+        })
+    }
+    $scope.DeleteHeader = function (HeaderID) {
+        $http({
+            method: 'POST',
+            url: '../CS.aspx/DeleteHeader',
+            data: { HeaderID:HeaderID}
+        }).success(function (response) {
+            var data = $.parseJSON(response.d);
+            alert(data);
+            getHeader()
+        }).error(function (er) {
+            alert(er);
+        })
+    }
     $scope.SaveHeader = function () {
         var ids = [];
         var vlus = [];
@@ -29,25 +48,21 @@ myApp.controller('HeaderController', function ($http, $scope) {
             url: '../CS.aspx/SaveHeaderList',
             data: { ids: ids, vlus: vlus }
         }).success(function(response){
-
+            var data = $.parseJSON(response.d);
+            alert(data);
         })
-        //$.ajax({
-        //    type: "POST",
-        //    url: "../CS.aspx/SaveHeaderList",
-        //    data: '{ids: "'+ids+'", vlus:"'+vlus+'" }',
-        //    contentType: "application/json; charset=utf-8",
-        //    dataType: "json",
-        //    success: OnSuccess,
-        //    failure: function (response) {
-        //        alert('Error');
-        //    }
-        //});
-        //function OnSuccess(response) {
-        //    var data = $.parseJSON(response.d);
-        //   // $scope.HeaderList1 = data;
-        //}
+     
     }
-
+    function getHeader() {
+        $http({
+            method: 'POST',
+            url: '../CS.aspx/GetHeaderList',
+            data: {name:'dev'}
+        }).success(function (response) {
+            var data = $.parseJSON(response.d);
+            $scope.HeaderList1 = data;
+        })
+    }
 })
 
 myApp.controller('ContentController', function ($http, $scope) {
@@ -135,9 +150,6 @@ myApp.controller('ImageController', function ($http, $scope) {
     $scope.img = "../img/iconset-addictive-flavour-set/png/chart.png";
     $scope.showTopToggle = false;
     $scope.ImageURL = "#";
-    $scope.isActive = function (viewLocation) {
-        return viewLocation === $location.path();
-    };
     $scope.imageInit = function () {
         $http({
             method: 'Post',
@@ -165,21 +177,6 @@ myApp.controller('ImageController', function ($http, $scope) {
             var data = $.parseJSON(response.d);
             $scope.ImageList = data;
         })
-        //$.ajax({
-        //    type: "POST",
-        //    url: "../CS.aspx/GetImageList",
-        //    data: '{webpageid: ' + webpageid + ' }',
-        //    contentType: "application/json; charset=utf-8",
-        //    dataType: "json",
-        //    success: OnSuccess2,
-        //    failure: function (response) {
-        //        alert('Error');
-        //    }
-        //});
-        //function OnSuccess2(response) {
-        //    var data = $.parseJSON(response.d);
-        //    $scope.ImageList = data;
-        //}
     }
     function getImagebyID() {
         var pid = $("#SelectPicName").find(":selected").val();
@@ -191,38 +188,26 @@ myApp.controller('ImageController', function ($http, $scope) {
             var data = $.parseJSON(response.d);
             $scope.Pics = data[0].PicsUrl;
         })
-        //$.ajax({
-        //    type: "POST",
-        //    url: "../CS.aspx/GetImageByID",
-        //    data: '{contentimageid: ' +pid + ' }',
-        //    contentType: "application/json; charset=utf-8",
-        //    dataType: "json",
-        //    success: OnSuccess3,
-        //    failure: function (response) {
-        //        alert('Error');
-        //    }
-        //});
-        //function OnSuccess3(response) {
-        //    var data = $.parseJSON(response.d);
-        //    $scope.Pics = data[0].PicsUrl;
-        //}
     }
 
 
     $scope.UploadLandingImage = function () {
         var input = document.getElementById('fileTolandingUpload');
         var file = input.files[0];
-        alert(input);
+        alert($("#Webpageid").find(":selected").val());
         var formData = new FormData();
         formData.append("file", file);
+        formData.append("webpageid", $("#Webpageid").find(":selected").val());
+        formData.append("title", $("#ImageTitle").val())
         $http({
             method: 'Post',
-            url: '../CS.aspx/UploadImage',
-            params: { cid: $("#SelectPicName").find(":selected").val() },
+            url: '../CS.aspx/AddUploadImage',
+            params: { webpageid: $("#Webpageid").find(":selected").val(),title:$("#ImageTitle").val() },
             headers: { 'Content-Type': undefined },
             data: formData
-        }).success(function (result) {
-            console.log(result);
+        }).success(function (response) {
+        alert('done')
+            console.log(response);
         }).error(function (err) {
             console.log(err);
         })
@@ -234,7 +219,8 @@ myApp.controller('ImageController', function ($http, $scope) {
             url: "../CS.aspx/DeleteImage",
             data: { imageid: picsid }
         }).success(function (response) {
-            alert(respons.d);
+            alert(response.d);
+              getImage($scope.WebPageID)
         })
     }
 })

@@ -170,10 +170,10 @@
                     </div>
                     <div class="col-md-12">
                         <table style="width:100%;">
-                            <thead><tr><td>ID</td><td>Title</td><td>Content</td></tr></thead>
+                            <thead><tr><td></td><td>ID</td><td>Title</td><td>Content</td></tr></thead>
                                     <option  value="">{{wp1.EnContent}}</option>
                            
-                             <tbody><tr data-ng-repeat="wp1 in ContentList"><td>{{wp1.ContentID}}</td><td>{{wp1.EnContent}}</td><td>{{wp1.LangContent}}</td><td><a href="#" data-ng-click="DeleteContent(wp1.ContentID)">Delete</a></td></tr></tbody>
+                             <tbody><tr data-ng-repeat="wp1 in ContentList"><td>{{$index}}</td><td>{{wp1.ContentID}}</td><td>{{wp1.EnContent}}</td><td>{{wp1.LangContent}}</td><td><a href="#" data-ng-click="DeleteContent(wp1.ContentID)">Delete</a></td></tr></tbody>
                         </table>
                     </div>
 

@@ -31,25 +31,22 @@
                 <div class="row" data-ng-init="imageInit()">
                     <div class="col-md-12">
                         <div>
+                            <asp:Label ID="lblMessage" runat="server"></asp:Label>
                             <div class="form-group">
                                 <label>Select WebPage :</label>
-                <select class="form-control" name="ddlWebpage" data-ng-model="WebPageID" data-ng-change="ChangeWebPage()">
-                    <option data-ng-repeat="wp in WebPageList" value="{{wp.WebPageID}}">{{wp.PageName}}</option>
-                </select>
+                                <asp:DropDownList ID="ddlPageID" runat="server" data-ng-change="ChangeWebPage()" data-ng-model="WebPageID" CssClass="form-control"></asp:DropDownList>
                             </div>
                             <div class="form-group">
                                 <label>Image Title:</label>
-                                <input type="text" id="ImageTitle" class="form-control" />
+                                <asp:TextBox ID="txtImageTitle" runat="server" CssClass="form-control"></asp:TextBox>
                             </div>
                             <div class="form-group">
                                 <label>Select Pics:</label>
-                                <input class="form-control" type="file" ng-model-instant id="fileTolandingUpload" />
+                                <asp:FileUpload ID="FileUpload1" runat="server" />
                             </div>
                             <div class="form-group">
                                 <label>.</label>
-                                <button type="button" id="btnSave" style="display: inline; margin-top: 0px;" class="btn btn-primary" data-ng-click="UploadLandingImage()">
-                                    Upload Image
-                                </button>
+                                <asp:Button ID="btnUpload" runat="server" Text="Upload" OnClick="Upload" />
                             </div>
                         </div>
                     </div>
@@ -59,7 +56,7 @@
                                 <tr><td>SN</td><td>Title</td><td>Pics</td><td></td></tr>
                             </thead>
                             <tbody>
-                                <tr data-ng-repeat="wp in ImageList"><td>{{wp.ContentImageID}}</td><td>{{wp.LangContent}}</td><td><img ng-src="{{wp.PicsUrl}}" alt="img" /></td><td><a href="#" data-ng-click="DeleteImage(wp.ContentImageID)">Delete</a></td></tr>
+                                <tr data-ng-repeat="wp in ImageList"><td>{{wp.ContentImageID}}</td><td>{{wp.LangContent}}</td><td><img ng-src="{{wp.PicsUrl}}" height="300" width="300" alt="img" /></td><td><a href="#" data-ng-click="DeleteImage(wp.ContentImageID)">Delete</a></td></tr>
                             </tbody>
                         </table>
                     </div>

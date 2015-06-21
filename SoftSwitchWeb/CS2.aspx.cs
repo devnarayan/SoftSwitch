@@ -16,8 +16,16 @@ public partial class CS2 : System.Web.UI.Page
     [System.Web.Services.WebMethod]
     public static string GetHeaderContent()
     {
-        ContentService cnservice = new ContentService();
-        DataTable dt = cnservice.GetWebPagesList();
+        HeaderService cnservice = new HeaderService();
+        DataTable dt = cnservice.HeaderList();
+        return Newtonsoft.Json.JsonConvert.SerializeObject(dt);
+    }
+
+    [System.Web.Services.WebMethod]
+    public static string GetHeaderContentList(string name)
+    {
+        HeaderService cnservice = new HeaderService();
+        DataTable dt = cnservice.GetHeaderList();
         return Newtonsoft.Json.JsonConvert.SerializeObject(dt);
     }
 

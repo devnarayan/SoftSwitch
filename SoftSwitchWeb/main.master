@@ -1,7 +1,7 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="main.master.cs" Inherits="main" %>
 
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd" "http://www.w3c.org/TR/1999/REC-html401-19991224/loose.dtd">
+<!DOCTYPE html>
 
 <html lang="en">
 <head id="ctl00_Head1" runat="server">
@@ -25,154 +25,14 @@
     <link rel="stylesheet" type="text/css" href="style/style.css" />
     <link href="style/RoundedCornerFF.css" rel="stylesheet" type="text/css" />
     <link href="style/MainMaster.css" rel="stylesheet" type="text/css" />
-    <script type="text/javascript" language="javascript">
-        //Drag and Drop FX
-        function initDragDrop() {
-            var z = 100;
-            var zTop = function () { z += 1; this.getEl().style.zIndex = z; };
-            var aModule = YAHOO.util.Dom.getElementsByClassName('module', 'div');
-            for (var i = 0; i < aModule.length; i++) {
-                var dnd = new YAHOO.util.DD(aModule[i].id);
-                dnd.onMouseDown = zTop;
-            }
-        }
-        YAHOO.util.Event.addListener(window, 'load', initDragDrop);
-        //Drag and Drop FX 
-
-    </script>
 </head>
-<body>
-    <script type="text/javascript" language="javascript">
-        function rtsMainSelected(sender, args) {
-            var selectedtab = args.get_tab().get_text();
-            var rtsMain = $find("ctl00_rtsMain");
-
-            if (selectedtab == "International Topup") {
-
-                var t = '';
-
-                if (t == null || t == "") {
-                    args.set_cancel(true);
-                }
-                else {
-                    return;
-                }
-
-                var win = $find("ctl00_radwinLogin");
-                if (win != null) win.show();
-
-                tab = rtsMain.findTabByValue("990");
-                tab.unselect();
-
-                return;
-
-            }
-
-            return;
-        }
-
-
-        function OnClientclose(radWindow) {
-
-            if (radWindow.argument == "Register")
-                window.location = "services.aspx";
-            else if (radWindow.argument == "CardLoggedIn")
-                window.location = "CD_CardDetail.aspx";
-            else if (radWindow.argument == "CustomerLoggedIn") {
-                var welcome = "0";
-
-                welcome = 1;
-
-                if (welcome == "1")
-                    window.location = "Welcome.aspx";
-                else
-                    window.location = "SD_AccountSummary.aspx";
-            }
-            else {
-                var rtsMain = $find("ctl00_rtsMain");
-
-                //var tab = rtsMain.findTabByText("Account");
-                var tab = rtsMain.findTabByValue("200");
-                tab.unselect();
-            }
-        }
-
-        /* 2009.5.15 StevenY not in use 
-        function rwSelect_OnClientclose(radWindow)
-        {         
-            alert("registerHS.aspx");
-            if ( radWindow.argument != null)
-                window.location="RegisterHS.aspx?" + radWindow.argument;
-        } 
-        */
-
-        function openLogin() {
-
-            var t = '';
-
-            if (t == null || t == "") {
-                var win = $find("ctl00_radwinLogin");
-                if (win != null) win.show();
-                return false;
-            }
-            else {
-                //alert("already logged in");
-                window.location = "SD_AccountSummary.aspx";
-                return false;
-            }
-        }
-
-        function openRates(profileID) {
-            if (profileID != null || profileID != "") {
-                var oWnd = $find("ctl00_radwinRates");
-                oWnd.setUrl("./SD_Rates.aspx?profileID=" + profileID);
-                oWnd.show();
-                return false;
-            }
-            else {
-                alert("Service not selected");
-                return false;
-            }
-        }
-
-    </script>
+<body  data-ng-app="myApp1">
     <form name="aspnetForm" runat="server">
-
-        <script type="text/javascript">
-            //<![CDATA[
-            var theForm = document.forms['aspnetForm'];
-            if (!theForm) {
-                theForm = document.aspnetForm;
-            }
-            function __doPostBack(eventTarget, eventArgument) {
-                if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
-                    theForm.__EVENTTARGET.value = eventTarget;
-                    theForm.__EVENTARGUMENT.value = eventArgument;
-                    theForm.submit();
-                }
-            }
-            //]]>
-        </script>
-
-
-
-
-        <script type="text/javascript">
-            //<![CDATA[
-            if (typeof (Sys) === 'undefined') throw new Error('ASP.NET Ajax client-side framework failed to load.');
-            //]]>
-        </script>
-        <script type="text/javascript">
-            //<![CDATA[
-            Sys.WebForms.PageRequestManager._initialize('ctl00$ScriptManager1', 'aspnetForm', [], [], [], 90, 'ctl00');
-            //]]>
-        </script>
-
         <div id="wrapper">
-            <div id="headernav">
+          <div data-ng-controller="HeaderFooterController" data-ng-init="GetHeaderContent()">
+               <div id="headernav">
                 <div id="toptag">
                     <span id="ctl00_lblWelcome" style="font-weight: bold;"></span>
-
                 </div>
                 <div id="topnav">
                     <div class="l">
@@ -180,18 +40,18 @@
                     <div class="m">
                         <div style="overflow: hidden; float: left;">
                             <ul class="rtsUL">
-                                <li class="rtsLI"><a class="rtsLink" href="main.aspx"><span class="rtsOut"><span
+                                <li class="rtsLI"><a class="rtsLink" href="Default.aspx"><span class="rtsOut"><span
                                     class="rtsIn"><span class="rtsTxt">
-                                        <span id="ctl00_lblHome">Home</span></span></span></span></a></li>
-                                <li class="rtsLI"><a class="rtsLink" href="services.aspx"><span class="rtsOut"><span
+                                        <span id="ctl00_lblHome" data-ng-bind-html="HeaderList[0].HeaderContent"></span></span></span></span></a></li>
+                                <li class="rtsLI"><a class="rtsLink" href="Services.aspx"><span class="rtsOut"><span
                                     class="rtsIn"><span class="rtsTxt">
-                                        <span id="ctl00_lblOurService">Our Service</span></span></span></span></a></li>
+                                        <span id="ctl00_lblOurService"><div data-ng-bind-html="HeaderList[1].HeaderContent"></div></span></span></span></span></a></li>
                                 <li class="rtsLI"><a class="rtsLink" href="AboutUs.aspx"><span class="rtsOut"><span
                                     class="rtsIn"><span class="rtsTxt">
-                                        <span id="ctl00_lblAboutUs">About Us</span></span></span></span></a></li>
+                                        <span id="ctl00_lblAboutUs" data-ng-bind-html="HeaderList[2].HeaderContent"></span></span></span></span></a></li>
                                 <li class="rtsLI"><a class="rtsLink" href="ContactUs.aspx"><span class="rtsOut"><span
                                     class="rtsIn"><span class="rtsTxt">
-                                        <span id="ctl00_lblContactUs">Contact Us</span></span></span></span></a></li>
+                                        <span id="ctl00_lblContactUs" data-ng-bind-html="HeaderList[3].HeaderContent"><%--Contact Us--%></span></span></span></span></a></li>
                             </ul>
                         </div>
                         <div style="float: left; margin-left: 20px;">
@@ -207,9 +67,9 @@
                             <ul class="rtsUL">
                                 <li class="rtsLI"><a class="rtsLink" href="basket.aspx"><span class="rtsOut"><span
                                     class="rtsIn"><span class="rtsTxt">
-                                        <span id="ctl00_lbViewCart">View Cart</span></span></span></span></a></li>
+                                        <span id="ctl00_lbViewCart" data-ng-bind-html="HeaderList[4].HeaderContent"><%--View Cart--%></span></span></span></span></a></li>
                                 <li>
-                                    <a onclick="return openLogin();" id="ctl00_lbLogin" navigateurl="SD_AccountSummary.aspx" href="javascript:__doPostBack(&#39;ctl00$lbLogin&#39;,&#39;&#39;)">My Account</a>
+                                    <a onclick="return openLogin();" id="ctl00_lbLogin" navigateurl="SD_AccountSummary.aspx" href="javascript:__doPostBack(&#39;ctl00$lbLogin&#39;,&#39;&#39;)"  data-ng-bind-html="HeaderList[6].HeaderContent"><%--My Account--%></a>
                                 </li>
                             </ul>
                         </div>
@@ -219,9 +79,9 @@
             <!-- Begin Header -->
             <div id="header">
                 <div class="logo">
-                    <h1 class="lineone">
-                        <span>My</span> Company</h1>
-                    <h2 class="linetwo">"Your online Phone"</h2>
+                    <h1 class="lineone"  data-ng-bind-html="HeaderList[8].HeaderContent">
+                      <%--  <span>My</span> Company--%></h1>
+                    <h2 class="linetwo"  data-ng-bind-html="HeaderList[9].HeaderContent"><%--"Your online Phone"--%></h2>
                 </div>
             </div>
             <!-- End Header -->
@@ -233,10 +93,10 @@
                     <!-- 2010.2.929.35 -->
                     <div class="rtsLevel rtsLevel1">
                         <ul class="rtsUL">
-                            <li class="rtsLI rtsFirst"><a class="rtsLink" href="SelectHsService.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Home Service</span></span></span></a></li>
-                            <li class="rtsLI"><a class="rtsLink" href="Cards.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Calling Card</span></span></span></a></li>
-                            <li class="rtsLI"><a class="rtsLink" href="Plans.aspx?Type=1"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">Residential</span></span></span></a></li>
-                            <li class="rtsLI rtsLast"><a class="rtsLink" href="registerinternationalrecharge.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt">International Topup</span></span></span></a></li>
+                            <li class="rtsLI rtsFirst"><a class="rtsLink" href="SelectHsService.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt"  data-ng-bind-html="HeaderList[10].HeaderContent"><%--Home Service--%></span></span></span></a></li>
+                            <li class="rtsLI"><a class="rtsLink" href="Cards.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt" data-ng-bind-html="HeaderList[11].HeaderContent"><%--Calling Card--%></span></span></span></a></li>
+                            <li class="rtsLI"><a class="rtsLink" href="Plans.aspx?Type=1"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt"  data-ng-bind-html="HeaderList[12].HeaderContent"><%--Residential--%></span></span></span></a></li>
+                            <li class="rtsLI rtsLast"><a class="rtsLink" href="InternationalTopup.aspx"><span class="rtsOut"><span class="rtsIn"><span class="rtsTxt" data-ng-bind-html="HeaderList[13].HeaderContent"><%--International Topup--%></span></span></span></a></li>
                         </ul>
                     </div>
                     <input id="ctl00_rtsMain_ClientState" name="ctl00_rtsMain_ClientState" type="hidden" />
@@ -245,32 +105,24 @@
             <!-- End Navigation -->
             <div id="rightnavigation">
             </div>
+            </div>
             <!-- Begin Top header -->
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
             </asp:ContentPlaceHolder>
           
             <!-- End Right Column -->
             <!-- Begin Footer -->
-            <div id="footer">
-                © 2009 MyCompany | Terms of Service | Privacy Policy
+            <div id="footer" data-ng-controller="Header_FooterController" data-ng-init="GetHeaderContent3()">
+              <span  data-ng-bind-html="HeaderList3[14].HeaderContent"></span> <%-- © 2009 MyCompany--%> | <a href="Terms.aspx"  data-ng-bind-html="HeaderList3[15].HeaderContent"><%--Terms of Service--%> </a> | <a href="Privacy.aspx" data-ng-bind-html="HeaderList3[16].HeaderContent"> <%--Privacy Policy--%></a>
             </div>
             <!-- End Footer -->
         </div>
-        <!-- End Wrapper -->
-        <script type="text/javascript">
-            //<![CDATA[
-            Sys.Application.add_init(function () {
-                $create(Telerik.Web.UI.RadTabStrip, { "_postBackReference": "__doPostBack(\u0027ctl00$rtsMain\u0027,\u0027{0}\u0027)", "_skin": "Test", "causesValidation": false, "clientStateFieldID": "ctl00_rtsMain_ClientState", "tabData": [{ "value": "110" }, { "value": "120" }, { "value": "140" }, { "value": "190" }] }, null, null, $get("ctl00_rtsMain"));
-            });
-            Sys.Application.add_init(function () {
-                $create(Telerik.Web.UI.RadWindow, { "_dockMode": false, "clientStateFieldID": "ctl00_radwinLogin_ClientState", "formID": "aspnetForm", "height": "240px", "iconUrl": "", "keepInScreenBounds": true, "minimizeIconUrl": "", "modal": true, "name": "radwinLogin", "navigateUrl": "DefaultL.aspx", "openerElementID": "ctl00_rtsMain_i3", "reloadOnShow": true, "showContentDuringLoad": false, "skin": "Sunset", "width": "464px" }, { "close": OnClientclose }, null, $get("ctl00_radwinLogin"));
-            });
-            Sys.Application.add_init(function () {
-                $create(Telerik.Web.UI.RadWindow, { "_dockMode": false, "clientStateFieldID": "ctl00_radwinRates_ClientState", "formID": "aspnetForm", "height": "440px", "iconUrl": "", "keepInScreenBounds": true, "minimizeIconUrl": "", "modal": true, "name": "radwinRates", "navigateUrl": "SD_Rates.aspx", "reloadOnShow": true, "showContentDuringLoad": false, "skin": "Sunset", "width": "520px" }, { "close": OnClientclose }, null, $get("ctl00_radwinRates"));
-            });
-            //]]>
-        </script>
-
     </form>
+
+    <script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-sanitize.min.js"></script>
+    <script src="AgController/HeaderFooterJS.js"></script>
+        <!-- End Wrapper -->
 </body>
 </html>

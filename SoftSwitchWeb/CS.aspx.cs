@@ -21,10 +21,31 @@ public partial class CS : System.Web.UI.Page
     public static string GetHeaderList(string name)
     {
         HeaderService hdservice = new HeaderService();
-        DataTable dt = hdservice.HeaderList();
+        DataTable dt = hdservice.GetHeaderList();
         return Newtonsoft.Json.JsonConvert.SerializeObject(dt);
     }
+    [System.Web.Services.WebMethod]
+    public static string SaveNewHeader(string label,string content)
+    {
+        HeaderService hdservice = new HeaderService();
+        HeaderModel model = new HeaderModel();
+        model.HeaderName = label;
+        model.HeaderContent1 = content;
+        bool bl = hdservice.AddHeader(model);
+        if (bl) return Newtonsoft.Json.JsonConvert.SerializeObject("New Header added successfully.");
+        else return Newtonsoft.Json.JsonConvert.SerializeObject("Please try agian");
 
+    }
+    [System.Web.Services.WebMethod]
+    public static string DeleteHeader(int HeaderID)
+    {
+        HeaderService hdservice = new HeaderService();
+        HeaderModel model = new HeaderModel();
+        model.HeaderID = HeaderID;
+        bool bl = hdservice.DeleteHeader(model);
+        if (bl) return Newtonsoft.Json.JsonConvert.SerializeObject("Header Deleted Successfully.");
+        else return Newtonsoft.Json.JsonConvert.SerializeObject("Please try agian");
+    }
     [System.Web.Services.WebMethod]
     public static string SaveHeaderList(string[] ids, string[] vlus)
     {
@@ -36,7 +57,7 @@ public partial class CS : System.Web.UI.Page
             model.HeaderID =Convert.ToInt32(ids[i]);
             var dt = hdservice.EditHeader(model);
         }
-        return "OK";
+        return "Header and Footer updated successfully.";
     }
     [System.Web.Services.WebMethod]
     public static string EditHeader(int id, string content)
@@ -57,15 +78,6 @@ public partial class CS : System.Web.UI.Page
         model.HeaderName = name;
         HeaderService hdservice = new HeaderService();
         var dt = hdservice.AddHeader(model);
-        return Newtonsoft.Json.JsonConvert.SerializeObject(dt);
-    }
-    [System.Web.Services.WebMethod]
-    public static string DeleteHeader(int id)
-    {
-        HeaderModel model = new HeaderModel();
-        model.HeaderID = id;
-        HeaderService hdservice = new HeaderService();
-        var dt = hdservice.DeleteHeader(model);
         return Newtonsoft.Json.JsonConvert.SerializeObject(dt);
     }
     #endregion
@@ -169,6 +181,36 @@ public partial class CS : System.Web.UI.Page
                 model.ContentImageID = cid;
                 model.PicsUrl = fName;
                 var mdl = ciservice.EditContentImage(model);// db.ContentImages.Where(sg => sg.ContentImageID == cid).FirstOrDefault();
+            }
+            return fName.ToString();
+        }
+        catch (Exception ex)
+        {
+            return "Error";
+        }
+    }
+
+    [System.Web.Services.WebMethod]
+    public static string AddUploadImage(HttpPostedFileBase file, int webpageid,string title)
+    {
+        string fName = string.Empty;
+        try
+        {
+            if (file != null)
+            {
+                ContentImageService ciservice = new ContentImageService();
+                var ext = Path.GetExtension(file.FileName);
+                Guid FileName = Guid.NewGuid();
+                var fileName = FileName + ext;
+                var path = HttpContext.Current.Server.MapPath("~/Upload/" + fileName);
+                file.SaveAs(path);
+                fName = "/Upload/" + fileName;
+                ContentImageModel model = new ContentImageModel();
+                model.ContentImageID = 0;
+                model.WebPageID = webpageid;
+                model.LangContent = title;
+                model.PicsUrl = fName;
+                var mdl = ciservice.AddContentImage(model);// db.ContentImages.Where(sg => sg.ContentImageID == cid).FirstOrDefault();
             }
             return fName.ToString();
         }

@@ -40,22 +40,17 @@
                     <li>
                         <a href="Header.aspx">
                             <span class="entypo-box"></span>
-                            Header and Footer
+                           Edit Header and Footer
                         </a>
                     </li>
                     <li>
                         <a href="Content.aspx">
                             <span class="entypo-pencil"></span>
-                            Update Contents
+                            Edit Contents
                         </a>
                     </li>
-                    <li>
-                        <a href="Image.aspx">
-                            <span class="entypo-picture"></span>
-                            Images
-                        </a>
-                    </li>
-
+                     <li><a href="ManageHeader.aspx"><span class="entypo-window"></span>
+                      Add/Delete Header & Footer</a></li>
                     <li><a href="AddPage.aspx"><span class="entypo-window"></span>
                         Add  Web Pages</a></li>
                     <li><a href="AddContent.aspx"><span class="entypo-list"></span>
@@ -63,7 +58,7 @@
                     <li>
                         <a href="AddImage.aspx">
                             <span class="entypo-window"></span>
-                            Add Image
+                            Manage Images
                         </a>
                     </li>
                 </ul>

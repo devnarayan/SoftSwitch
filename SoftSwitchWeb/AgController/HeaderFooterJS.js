@@ -2,17 +2,16 @@
 
 myApp1.controller('HeaderFooterController', function ($http, $scope) {
    $scope.GetHeaderContent = function () {
-      
         $http({
             method: 'POST',
-            url:  'CS2.aspx/GetHeaderContent'
-           // params: { LanguageID: LanguageID }
+            url: '../CS2.aspx/GetHeaderContentList',
+            data:{name:'dev'}
         }).success(function (result) {
-            $scope.HeaderList = result;
-            $("#loading").hide();
+         var data = $.parseJSON(result.d);
+            $scope.HeaderList = data;
         })
         .error(function (err) {
-            $("#loading").hide();
+            alert(err)
             console.log(err);
         })
     }
@@ -36,6 +35,15 @@ myApp1.controller('ContentController', function ($http, $scope) {
             $("#loading").hide();
             console.log(err);
         })
+
+         $http({
+            method: 'Post',
+            url:'../CS.aspx/GetImageList',
+            data: { webpageid: WebPageID }
+        }).success(function (response) {
+            var data = $.parseJSON(response.d);
+            $scope.ImageList = data;
+        })
     }
 });
 
@@ -43,11 +51,12 @@ myApp1.controller('Header_FooterController', function ($http, $scope) {
 
     $scope.GetHeaderContent3 = function () {
         $http({
-            method: 'Get',
-            url: 'CS2.aspx/GetHeaderContent'
-            //  params: { LanguageID: LanguageID }
+            method: 'Post',
+            url: 'CS2.aspx/GetHeaderContentList',
+            data:{name:'dev'}
         }).success(function (result) {
-            $scope.HeaderList = result;
+         var data = $.parseJSON(result.d);
+            $scope.HeaderList3 = data;
             $("#loading").hide();
         })
         .error(function (err) {

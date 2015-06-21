@@ -5,7 +5,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-      <div data-ng-controller="HeaderController">
+      <div data-ng-controller="HeaderController"  data-ng-init="GetHeaderInit()">
         <div class="heading-bar">
             <div class="user-bar">
                 <div id="username"></div>
